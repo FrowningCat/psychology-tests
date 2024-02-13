@@ -46,7 +46,6 @@
   line-height: 23px;
   margin: -15vh 10vw 0 10vw;
   width: 80vw;
-  height: 100ch;
 }
 .personalAccount__main__userInfo {
   display: flex;
@@ -91,4 +90,27 @@
 }
 .personalAccount__main__userInfo__data__editProfileAndSetting__text:hover {
   color: #ff5555;
+}
+.personalAccount__main__scrollBar {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.personalAccount__main__scrollBar__textBlock {
+  margin-left: 25vw;
+  display: flex;
+  gap: 36px;
+}
+.personalAccount__main__scrollBar__textBlock__text {
+  cursor: pointer;
+}
+.personalAccount__main__scrollBar__textBlock__text:hover {
+  color: #ff5555;
+}
+.personalAccount__main__scrollBar__positioningTest {
+  display: flex;
+  gap: 36px;
+}
+.personalAccount__main__scrollBar__positioningTest__img {
+  cursor: pointer;
 }/*# sourceMappingURL=personalAccount.css.map */

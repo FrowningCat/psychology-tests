@@ -53,13 +53,23 @@ export default function personalAccount() {
                 </div>
                 <div className="personalAccount__main__scrollBar">
                     <div className="personalAccount__main__scrollBar__textBlock">
-                        <div className="personalAccount__main__scrollBar__textBlock__text"></div>
-                        <div className="personalAccount__main__scrollBar__textBlock__text"></div>
-                        <div className="personalAccount__main__scrollBar__textBlock__text"></div>
+                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                            Пройденные
+                        </div>
+                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                            Любимые
+                        </div>
+                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                            Просмотренные
+                        </div>
                     </div>
                     <div className="personalAccount__main__scrollBar__positioningTest">
-                        <div className="personalAccount__main__scrollBar__positioningTest__img"></div>
-                        <div className="personalAccount__main__scrollBar__positioningTest__img"></div>
+                        <div className="personalAccount__main__scrollBar__positioningTest__img">
+                            4
+                        </div>
+                        <div className="personalAccount__main__scrollBar__positioningTest__img">
+                            5
+                        </div>
                     </div>
                 </div>
                 <div className="personalAccount__main__test"></div>
