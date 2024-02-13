@@ -1,0 +1,62 @@
+$fontSizeMain: 20px;
+$fontSizeheader: 16px;
+$fontSizeButton: 16px;
+$fontSizeTitle: 64px;
+
+$lineHeightMain: 23px;
+$lineHeightheader: 19px;
+$lineHeightButton: 21.79px;
+$lineHeightTitle: 75px;
+
+$backgroundColor: #141414;
+$mainTextColor: #676767;
+$additionalTextColor: #d8d8d8;
+$borderBoxColor: #a9a9a9;
+$borderBoxHoverColor: #ff5555;
+$textHoverColor: #ff5555;
+$buttonColor: #ff5555;
+$buttonHoverColor: #676767;
+
+.personalAccount {
+    background-color: $backgroundColor;
+    font-size: $fontSizeheader;
+    line-height: $lineHeightheader;
+    &__header {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        box-sizing: border-box;
+        padding: 4vh 5vw;
+        &__logo {
+            color: $mainTextColor;
+        }
+        &__topBar {
+            display: flex;
+            margin-left: 55vw;
+            gap: 30px;
+            &__button {
+                cursor: pointer;
+                color: $mainTextColor;
+                &__exit {
+                    margin-top: -1.5vh;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    padding: 1.5vh 3vw;
+                    border-radius: 20px;
+                    color: $additionalTextColor;
+                    margin-left: 10vw;
+                    background-color: $buttonColor;
+                    height: 5vh;
+                    width: 9vw;
+                    transition: background-color 1s;
+                }
+                &__exit:hover {
+                    background-color: $backgroundColor;
+                }
+            }
+            &__button:hover {
+                color: $textHoverColor;
+            }
+        }
+    }
+}
