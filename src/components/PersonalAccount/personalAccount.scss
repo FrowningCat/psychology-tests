@@ -133,5 +133,31 @@ $buttonHoverColor: #676767;
                 }
             }
         }
+        &__test {
+            margin-top: 5vh;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__info {
+                color: $additionalTextColor;
+                cursor: pointer;
+                width: 305px;
+                height: 263px;
+                display: grid;
+                gap: 16px;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 36px 80px 20px 80px;
+                &__avatar {
+                    cursor: pointer;
+                    border-radius: 100px;
+                }
+            }
+            &__info:hover {
+                box-sizing: border-box;
+                border: 2px solid $borderBoxHoverColor;
+            }
+        }
     }
 }

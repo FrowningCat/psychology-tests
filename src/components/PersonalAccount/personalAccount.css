@@ -113,4 +113,30 @@
 }
 .personalAccount__main__scrollBar__positioningTest__img {
   cursor: pointer;
+}
+.personalAccount__main__test {
+  margin-top: 5vh;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.personalAccount__main__test__info {
+  color: #d8d8d8;
+  cursor: pointer;
+  width: 305px;
+  height: 263px;
+  display: grid;
+  gap: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 36px 80px 20px 80px;
+}
+.personalAccount__main__test__info__avatar {
+  cursor: pointer;
+  border-radius: 100px;
+}
+.personalAccount__main__test__info:hover {
+  box-sizing: border-box;
+  border: 2px solid #ff5555;
 }/*# sourceMappingURL=personalAccount.css.map */

@@ -1,6 +1,21 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 import './personalAccount.css';
 
 export default function personalAccount() {
+    const [users, setUsers] = useState([]);
+
+    const f = async () => {
+        const res = await fetch('https://reqres.in/api/users/');
+        const json = await res.json();
+        setUsers(json.data);
+    };
+
+    useEffect(() => {
+        f();
+    }, []);
+
     return (
         <div className="personalAccount">
             <header className="personalAccount__header">
@@ -72,7 +87,28 @@ export default function personalAccount() {
                         </div>
                     </div>
                 </div>
-                <div className="personalAccount__main__test"></div>
+                <div className="personalAccount__main__test">
+                    {users.length &&
+                        users.map((user) => {
+                            return (
+                                <>
+                                    <div
+                                        className="personalAccount__main__test__info"
+                                        key={user.id}
+                                    >
+                                        <div>
+                                            <img
+                                                className="personalAccount__main__test__info__avatar"
+                                                key={user.avatar}
+                                                src={user.avatar}
+                                            />
+                                        </div>
+                                        {user.first_name}
+                                    </div>
+                                </>
+                            );
+                        })}
+                </div>
             </main>
             <footer className="personalAccount__footer">
                 <div className="personalAccount__footer__textBlock">
