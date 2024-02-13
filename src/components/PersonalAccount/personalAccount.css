@@ -139,4 +139,30 @@
 .personalAccount__main__test__info:hover {
   box-sizing: border-box;
   border: 2px solid #ff5555;
+}
+.personalAccount__footer {
+  width: 80vw;
+  height: 20vh;
+  margin: 15vh 0 0 10vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.personalAccount__footer__textBlock {
+  width: 15vw;
+  font-size: 16px;
+  line-height: 17px;
+  padding: 15px;
+  display: grid;
+  gap: 24px;
+  background-color: #181818;
+}
+.personalAccount__footer__textBlock__text {
+  cursor: pointer;
+}
+.personalAccount__footer__textBlock__text:hover {
+  color: #ff5555;
+}
+.personalAccount__footer__img {
+  margin: 10vh 10vw 0 0;
 }/*# sourceMappingURL=personalAccount.css.map */

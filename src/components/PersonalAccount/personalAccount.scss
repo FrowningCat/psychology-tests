@@ -1,15 +1,14 @@
 $fontSizeMain: 20px;
 $fontSizeheader: 16px;
-$fontSizeButton: 16px;
-$fontSizeTitle: 64px;
+$fontSizeFooter: 16px;
 
 $lineHeightMain: 23px;
 $lineHeightheader: 19px;
-$lineHeightButton: 21.79px;
-$lineHeightTitle: 75px;
+$lineHeightFooter: 17px;
 
 $backgroundColor: #141414;
 $mainTextColor: #676767;
+$footerColor: #181818;
 $additionalTextColor: #d8d8d8;
 $borderBoxColor: #a9a9a9;
 $borderBoxHoverColor: #ff5555;
@@ -158,6 +157,32 @@ $buttonHoverColor: #676767;
                 box-sizing: border-box;
                 border: 2px solid $borderBoxHoverColor;
             }
+        }
+    }
+    &__footer {
+        width: 80vw;
+        height: 20vh;
+        margin: 15vh 0 0 10vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        &__textBlock {
+            width: 15vw;
+            font-size: $fontSizeFooter;
+            line-height: $lineHeightFooter;
+            padding: 15px;
+            display: grid;
+            gap: 24px;
+            background-color: $footerColor;
+            &__text {
+                cursor: pointer;
+            }
+            &__text:hover {
+                color: $textHoverColor;
+            }
+        }
+        &__img {
+            margin: 10vh 10vw 0 0;
         }
     }
 }

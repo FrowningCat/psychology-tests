@@ -112,11 +112,17 @@ export default function personalAccount() {
             </main>
             <footer className="personalAccount__footer">
                 <div className="personalAccount__footer__textBlock">
-                    <div className="personalAccount__footer__textBlock__text"></div>
-                    <div className="personalAccount__footer__textBlock__text"></div>
-                    <div className="personalAccount__footer__textBlock__text"></div>
+                    <div className="personalAccount__footer__textBlock__text">
+                        О нас
+                    </div>
+                    <div className="personalAccount__footer__textBlock__text">
+                        О проекте
+                    </div>
+                    <div className="personalAccount__footer__textBlock__text">
+                        Спонсоры
+                    </div>
                 </div>
-                <div className="personalAccount__footer__img"></div>
+                <div className="personalAccount__footer__img">6</div>
             </footer>
         </div>
     );
