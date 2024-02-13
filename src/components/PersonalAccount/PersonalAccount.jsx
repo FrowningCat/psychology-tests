@@ -20,21 +20,35 @@ export default function personalAccount() {
                     </div>
                 </div>
             </header>
+            <div className="personalAccount__img"></div>
             <main className="personalAccount__main">
-                <div className="personalAccount__main__img"></div>
                 <div className="personalAccount__main__userInfo">
                     <div className="personalAccount__main__userInfo__avatar">
                         <div className="personalAccount__main__userInfo__avatar__img"></div>
-                        <div className="personalAccount__main__userInfo__avatar__name"></div>
+                        <div className="personalAccount__main__userInfo__avatar__name">
+                            Vlad
+                        </div>
                     </div>
-                    <div className="personalAccount__main__userInfo__copy"></div>
-                    <div className="personalAccount__main__userInfo__editProfileAndSetting">
-                        <div className="personalAccount__main__userInfo__editProfileAndSetting__img"></div>
-                        <div className="personalAccount__main__userInfo__editProfileAndSetting__text"></div>
-                    </div>
-                    <div className="personalAccount__main__userInfo__editProfileAndSetting">
-                        <div className="personalAccount__main__userInfo__editProfileAndSetting__img"></div>
-                        <div className="personalAccount__main__userInfo__editProfileAndSetting__text"></div>
+                    <div className="personalAccount__main__userInfo__data">
+                        <div className="personalAccount__main__userInfo__data__copy">
+                            Скопировать
+                        </div>
+                        <div className="personalAccount__main__userInfo__data__editProfileAndSetting">
+                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__img">
+                                2
+                            </div>
+                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
+                                Изменить
+                            </div>
+                        </div>
+                        <div className="personalAccount__main__userInfo__data__editProfileAndSetting">
+                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__img">
+                                3
+                            </div>
+                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
+                                Настройки
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="personalAccount__main__scrollBar">

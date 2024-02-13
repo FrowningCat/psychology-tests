@@ -19,16 +19,14 @@ $buttonHoverColor: #676767;
 
 .personalAccount {
     background-color: $backgroundColor;
-    font-size: $fontSizeheader;
-    line-height: $lineHeightheader;
+    color: $mainTextColor;
     &__header {
-        width: 100vw;
-        height: 10vh;
+        font-size: $fontSizeheader;
+        line-height: $lineHeightheader;
         display: flex;
         box-sizing: border-box;
         padding: 4vh 5vw;
         &__logo {
-            color: $mainTextColor;
         }
         &__topBar {
             display: flex;
@@ -44,7 +42,7 @@ $buttonHoverColor: #676767;
                     padding: 1.5vh 3vw;
                     border-radius: 20px;
                     color: $additionalTextColor;
-                    margin-left: 10vw;
+                    margin-left: 5vw;
                     background-color: $buttonColor;
                     height: 5vh;
                     width: 9vw;
@@ -56,6 +54,61 @@ $buttonHoverColor: #676767;
             }
             &__button:hover {
                 color: $textHoverColor;
+            }
+        }
+    }
+    &__img {
+        background-color: #d8d8d8;
+        height: 40vh;
+    }
+    &__main {
+        font-size: $fontSizeMain;
+        line-height: $lineHeightMain;
+        margin: -15vh 10vw 0 10vw;
+        width: 80vw;
+        height: 100ch;
+        &__userInfo {
+            display: flex;
+            justify-content: space-between;
+            &__avatar {
+                width: 200px;
+                display: grid;
+                text-align: center;
+                gap: 24px;
+                &__img {
+                    background-color: black;
+                    height: 200px;
+                    border-radius: 100px;
+                    border: 2px solid $borderBoxColor;
+                }
+                &__name {
+                    color: $additionalTextColor;
+                }
+            }
+            &__data {
+                display: flex;
+                gap: 58px;
+                margin-top: 150px;
+                height: 10px;
+                &__copy {
+                    cursor: pointer;
+                }
+                &__copy:hover {
+                    color: $textHoverColor;
+                }
+                &__editProfileAndSetting {
+                    display: flex;
+                    gap: 12px;
+                    &__img {
+                        cursor: pointer;
+                    }
+                    &__text {
+                        cursor: pointer;
+                    }
+                    &__text:hover {
+                        color: $textHoverColor;
+                    }
+                }
             }
         }
     }
