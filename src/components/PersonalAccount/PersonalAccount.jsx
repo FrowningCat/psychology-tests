@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import './personalAccount.css';
 
@@ -21,18 +22,26 @@ export default function personalAccount() {
             <header className="personalAccount__header">
                 <div className="personalAccount__header__logo">1</div>
                 <div className="personalAccount__header__topBar">
-                    <div className="personalAccount__header__topBar__button">
-                        Главная
-                    </div>
-                    <div className="personalAccount__header__topBar__button">
-                        Тесты
-                    </div>
-                    <div className="personalAccount__header__topBar__button">
-                        Эксперты
-                    </div>
-                    <div className="personalAccount__header__topBar__button__exit">
-                        Выход
-                    </div>
+                    <Link to={'/'}>
+                        <div className="personalAccount__header__topBar__button">
+                            Главная
+                        </div>
+                    </Link>
+                    <Link to={'/test'}>
+                        <div className="personalAccount__header__topBar__button">
+                            Тесты
+                        </div>
+                    </Link>
+                    <Link to={'/expert'}>
+                        <div className="personalAccount__header__topBar__button">
+                            Эксперты
+                        </div>
+                    </Link>
+                    <Link to={'/signUp'}>
+                        <div className="personalAccount__header__topBar__button__exit">
+                            Выход
+                        </div>
+                    </Link>
                 </div>
             </header>
             <div className="personalAccount__img"></div>
@@ -52,17 +61,21 @@ export default function personalAccount() {
                             <div className="personalAccount__main__userInfo__data__editProfileAndSetting__img">
                                 2
                             </div>
-                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
-                                Изменить
-                            </div>
+                            <Link to={'/change'}>
+                                <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
+                                    Изменить
+                                </div>
+                            </Link>
                         </div>
                         <div className="personalAccount__main__userInfo__data__editProfileAndSetting">
                             <div className="personalAccount__main__userInfo__data__editProfileAndSetting__img">
                                 3
                             </div>
-                            <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
-                                Настройки
-                            </div>
+                            <Link to={'/setting'}>
+                                <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
+                                    Настройки
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -112,15 +125,21 @@ export default function personalAccount() {
             </main>
             <footer className="personalAccount__footer">
                 <div className="personalAccount__footer__textBlock">
-                    <div className="personalAccount__footer__textBlock__text">
-                        О нас
-                    </div>
-                    <div className="personalAccount__footer__textBlock__text">
-                        О проекте
-                    </div>
-                    <div className="personalAccount__footer__textBlock__text">
-                        Спонсоры
-                    </div>
+                    <Link to={'/aboutUs'}>
+                        <div className="personalAccount__footer__textBlock__text">
+                            О нас
+                        </div>
+                    </Link>
+                    <Link to={'/aboutProject'}>
+                        <div className="personalAccount__footer__textBlock__text">
+                            О проекте
+                        </div>
+                    </Link>
+                    <Link to={'/sponsor'}>
+                        <div className="personalAccount__footer__textBlock__text">
+                            Спонсоры
+                        </div>
+                    </Link>
                 </div>
                 <div className="personalAccount__footer__img">6</div>
             </footer>

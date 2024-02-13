@@ -8,6 +8,7 @@ $lineHeightFooter: 17px;
 
 $backgroundColor: #141414;
 $mainTextColor: #676767;
+$textBlockColor: #181818;
 $footerColor: #181818;
 $additionalTextColor: #d8d8d8;
 $borderBoxColor: #a9a9a9;
@@ -139,6 +140,7 @@ $buttonHoverColor: #676767;
             flex-wrap: wrap;
             justify-content: space-between;
             &__info {
+                background-color: $textBlockColor;
                 color: $additionalTextColor;
                 cursor: pointer;
                 width: 305px;
