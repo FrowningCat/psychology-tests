@@ -141,6 +141,9 @@
   box-sizing: border-box;
   border: 2px solid #ff5555;
 }
+.personalAccount__main__testNone {
+  display: none;
+}
 .personalAccount__footer {
   width: 80vw;
   height: 20vh;

@@ -17,6 +17,16 @@ export default function personalAccount() {
         f();
     }, []);
 
+    function onClick() {
+        let nameScss = document.getElementById('test');
+        nameScss.setAttribute('class', 'personalAccount__main__testNone');
+    }
+
+    function onClick2() {
+        let nameScss = document.getElementById('test');
+        nameScss.setAttribute('class', 'personalAccount__main__test');
+    }
+
     return (
         <div className="personalAccount">
             <header className="personalAccount__header">
@@ -81,13 +91,22 @@ export default function personalAccount() {
                 </div>
                 <div className="personalAccount__main__scrollBar">
                     <div className="personalAccount__main__scrollBar__textBlock">
-                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                        <div
+                            className="personalAccount__main__scrollBar__textBlock__text"
+                            onClick={() => onClick2()}
+                        >
                             Пройденные
                         </div>
-                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                        <div
+                            className="personalAccount__main__scrollBar__textBlock__text"
+                            onClick={() => onClick()}
+                        >
                             Любимые
                         </div>
-                        <div className="personalAccount__main__scrollBar__textBlock__text">
+                        <div
+                            className="personalAccount__main__scrollBar__textBlock__text"
+                            onClick={() => onClick()}
+                        >
                             Просмотренные
                         </div>
                     </div>
@@ -100,7 +119,7 @@ export default function personalAccount() {
                         </div>
                     </div>
                 </div>
-                <div className="personalAccount__main__test">
+                <div className="personalAccount__main__test" id="test">
                     {users.length &&
                         users.map((user) => {
                             return (

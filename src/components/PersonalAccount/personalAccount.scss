@@ -160,6 +160,9 @@ $buttonHoverColor: #676767;
                 border: 2px solid $borderBoxHoverColor;
             }
         }
+        &__testNone {
+            display: none;
+        }
     }
     &__footer {
         width: 80vw;
