@@ -198,9 +198,8 @@ export default function lending() {
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Quibusdam, earum. <br />В
-                                    период наибольшей загруженности инстанции
-                                    этот период может растягиваться по времени
-                                    до 10-14 дней.
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Excepturi, necessitatibus?
                                     <br />
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Nemo, eveniet!{' '}
@@ -290,17 +289,21 @@ export default function lending() {
             <footer className="landing__footer">
                 <div className="landing__footer__divText1">
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text className="landing__footer__telegram">
+                        <text className="landing__footer__telegram link">
                             <div>18</div>
                             Чат поддержки
                         </text>
                     </Link>
-                    <text>©2024. Все права защищены</text>
+                    <text className="link">©2024. Все права защищены</text>
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text>Условия использования сервиса</text>
+                        <text className="link">
+                            Условия использования сервиса
+                        </text>
                     </Link>
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text>Политика конфиденциальности</text>
+                        <text className="link">
+                            Политика конфиденциальности
+                        </text>
                     </Link>
                 </div>
                 <div className="landing__footer__divText2">

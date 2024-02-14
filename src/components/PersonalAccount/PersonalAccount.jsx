@@ -81,7 +81,7 @@ export default function personalAccount() {
                             <div className="personalAccount__main__userInfo__data__editProfileAndSetting__img">
                                 3
                             </div>
-                            <Link to={'/setting'}>
+                            <Link to={'/settingAccount'}>
                                 <div className="personalAccount__main__userInfo__data__editProfileAndSetting__text">
                                     Настройки
                                 </div>
