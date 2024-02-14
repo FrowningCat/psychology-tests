@@ -26,39 +26,33 @@ export default function lending() {
                         </div>
                     </Link>
                 </div>
-                <Link to={'/authorization'} className="link_btn">
+                <Link to={'/personalAccount'} className="link_btn">
                     <div className="landing__header__button">
-                        <text className="link">Подать заявление</text>
+                        <text className="link">Тесты</text>
                     </div>
                 </Link>
             </header>
             <main className="landing__main">
                 <div className="landing__main__topDiv">
                     <div className="landing__main__topBlok">
-                        <div className="landing__main__typeOfQuestionnaire">
-                            <div className="landing__main__Clipboard">
-                                <div>4</div>
-                            </div>
-                            <text> Анкета DS-160</text>
-                        </div>
                         <div className="landing__main__topBlokTitle">
-                            Получите{' '}
-                            <text className="additionalColor">визу США</text> в
-                            срок от 1 дня
+                            Lorem <text className="additionalColor">Lorem</text>{' '}
+                            Lorem ipsum dolor sit amet.
                         </div>
                         <div className="main__topBlokText">
-                            Разработанный ИИ-алгоритм ускорения записи и удобный
-                            интерфейс для заполнения анкеты, оплата Госпошлины с
-                            российской карты - подача документов на визу в США
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Obcaecati eum laudantium beatae incidunt
+                            tempore consectetur, rerum neque voluptatem
+                            reiciendis ea.
                             <br />
                             <text className="additionalColor additionalWeight">
-                                за считанные минуты.
+                                Lorem, ipsum dolor.
                             </text>
                         </div>
                     </div>
                     <Link to={'/authorization'} className="link_btn">
                         <div className="landing__main__topButton link">
-                            <text>Подать заявление</text>
+                            <text>Lorem, ipsum.</text>
                             <div>5</div>
                         </div>
                     </Link>
@@ -67,11 +61,11 @@ export default function lending() {
                 <div className="landing__main__info">
                     <div className="landing__main__infoTitle">
                         <text className="landing__main__title">
-                            Подача документов на визу США
+                            Lorem ipsum dolor sit amet.
                         </text>
                         <text className="landing__main__infoText">
-                            Разработанный ИИ-алгоритм ускорения записи и удобный
-                            интерфейс для заполнения анкеты
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Eaque, enim!
                         </text>
                     </div>
                     <div className="landing__main__infoBlock">
@@ -80,10 +74,10 @@ export default function lending() {
                                 <div>6</div>
                             </div>
                             <div className="landing__main__infoBlockTitle">
-                                EASY
+                                Lorem
                             </div>
                             <div className="landing__main__infoBlockText">
-                                Простое заполнение формы DS-160 с подсказками
+                                Lorem ipsum dolor sit amet.
                             </div>
                         </div>
                         <div className="landing__main__infoDiv">
@@ -91,10 +85,10 @@ export default function lending() {
                                 <div>7</div>
                             </div>
                             <div className="landing__main__infoBlockTitle">
-                                FAST
+                                Lorem
                             </div>
                             <div className="landing__main__infoBlockText">
-                                Собеседование в обход долгой очереди
+                                Lorem ipsum dolor sit amet.
                             </div>
                         </div>
                         <div className="landing__main__infoDiv">
@@ -102,10 +96,10 @@ export default function lending() {
                                 <div>8</div>
                             </div>
                             <div className="landing__main__infoBlockTitle">
-                                AI
+                                Lorem
                             </div>
                             <div className="landing__main__infoBlockText">
-                                Разработанный ИИ-алгоритм для подачи документов
+                                Lorem ipsum dolor sit amet.
                             </div>
                         </div>
                         <div className="landing__main__infoDiv">
@@ -113,10 +107,10 @@ export default function lending() {
                                 <div>9</div>
                             </div>
                             <div className="landing__main__infoBlockTitle">
-                                FLEXIBLE
+                                Lorem
                             </div>
                             <div className="landing__main__infoBlockText">
-                                Оплата Госпошлины США с российской карты
+                                Lorem ipsum dolor sit amet.
                             </div>
                         </div>
                     </div>
@@ -125,7 +119,7 @@ export default function lending() {
                 <div className="landing__main__foooter">
                     <div className="landing__main__submissionOfBocuments">
                         <div className="landing__main__title">
-                            Подача документов
+                            Lorem, ipsum.
                         </div>
                         <div className="landing__main__submissionOfBocumentsStages">
                             <div className="landing__main__submissionOfBocumentsStage">
@@ -134,13 +128,13 @@ export default function lending() {
                                 </div>
                                 <div className="landing__main__stageDiv">
                                     <div className="landing__main__stageTitle">
-                                        Подаете документы на визу
+                                        Lorem ipsum dolor sit.
                                     </div>
                                     <div className="landing__main__stageText">
-                                        Заполняете анкету на нашем сайте.
-                                        Необходимые документы: паспорт,
-                                        загранпаспорт. Выбираете удобное
-                                        консульство для собеседования
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Omnis ex sunt impedit
+                                        quasi labore quaerat quibusdam ipsa
+                                        similique dolorum odit.
                                     </div>
                                 </div>
                             </div>
@@ -150,11 +144,11 @@ export default function lending() {
                                 </div>
                                 <div className="landing__main__stageDiv">
                                     <div className="landing__main__stageTitle">
-                                        Оплачиваете
+                                        Lorem, ipsum.
                                     </div>
                                     <div className="landing__main__stageText">
-                                        Оплатить услуги можно с любой российской
-                                        карты (мир, виза, оплата через сайт)
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Quasi, exercitationem.
                                     </div>
                                 </div>
                             </div>
@@ -164,15 +158,15 @@ export default function lending() {
                                 </div>
                                 <div className="landing__main__stageDiv">
                                     <div className="landing__main__stageTitle">
-                                        Ожидаете ответа
+                                        Lorem, ipsum.
                                     </div>
                                     <div className="landing__main__stageText">
-                                        Ожидание может занять от 10 дней. За
-                                        дополнительную плату{' '}
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Aliquam, labore?{' '}
                                         <text className="landing__additionalColor additionalWeight">
-                                            можно ускорить продвижение в очереди
+                                            Lorem ipsum dolor sit amet.
                                         </text>{' '}
-                                        ($450, от 1 дня)
+                                        Lorem ipsum dolor sit amet.
                                     </div>
                                 </div>
                             </div>
@@ -182,11 +176,11 @@ export default function lending() {
                                 </div>
                                 <div className="landing__main__stageDiv">
                                     <div className="landing__main__stageTitle">
-                                        Виза готова!
+                                        Lorem, ipsum.
                                     </div>
                                     <div className="landing__main__stageText">
-                                        Уведомление придет вам на почту, можете
-                                        смело отправляться в путешествие!
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni, distinctio.
                                     </div>
                                 </div>
                             </div>
@@ -194,47 +188,43 @@ export default function lending() {
                     </div>
                     <div className="landing__main__iPhone">11</div>
                     <div className="landing__main__faq">
-                        <div className="landing__main__title">FAQ</div>
+                        <div className="landing__main__title">Lorem</div>
                         <div className="landing__main__faqDetails">
                             <details>
                                 <summary>
-                                    Сколько делают визу США?{' '}
+                                    Lorem ipsum dolor sit amet.{' '}
                                     <div className="chevron link">12</div>
                                 </summary>
                                 <div>
-                                    После приема документов на визу, консульство
-                                    берет время на их обработку и проверку. Как
-                                    правило, срок выдачи составляет около
-                                    недели. <br />В период наибольшей
-                                    загруженности инстанции этот период может
-                                    растягиваться по времени до 10-14 дней.
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quibusdam, earum. <br />В
+                                    период наибольшей загруженности инстанции
+                                    этот период может растягиваться по времени
+                                    до 10-14 дней.
                                     <br />
-                                    Сотрудничая с нами можно ускорить процесс,
-                                    доплатив за срочность. В этом случае{' '}
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nemo, eveniet!{' '}
                                     <text className="additionalColor">
-                                        есть шанс получить визу в течение 3 дней
-                                        или при необходимости даже в течение 1
-                                        дня.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Laboriosam, similique!
                                     </text>
                                 </div>
                             </details>
                             <details>
                                 <summary>
-                                    На сколько дают визу США?{' '}
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ipsa, voluptates?{' '}
                                     <div className="chevron link">13</div>
                                 </summary>
                                 <div>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nobis pariatur
-                                    necessitatibus fugiat quae ipsam totam,
-                                    autem iusto, commodi vero mollitia ab
-                                    similique, quos consequuntur? Quam similique
-                                    velit expedita commodi accusantium?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Vero nulla labore aliquid
+                                    ratione vel ab odio tempora odit quae magni?
                                 </div>
                             </details>
                             <details>
                                 <summary>
-                                    Что нужно для визы США?{' '}
+                                    Lorem ipsum dolor sit amet.{' '}
                                     <div className="chevron link">14</div>
                                 </summary>
                                 <div>
@@ -248,8 +238,8 @@ export default function lending() {
                             </details>
                             <details>
                                 <summary>
-                                    Размер консульского и сервисного сбора на
-                                    визу США?
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Dolorem, atque.
                                     <div className="chevron link">15</div>
                                 </summary>
                                 <div>
@@ -263,7 +253,7 @@ export default function lending() {
                             </details>
                             <details>
                                 <summary>
-                                    Какие типы визы бывают?{' '}
+                                    Lorem ipsum dolor sit amet.{' '}
                                     <div className="chevron link">16</div>
                                 </summary>
                                 <div>
@@ -279,17 +269,17 @@ export default function lending() {
                     </div>
                     <div className="landing__main__questions">
                         <div className="landing__main__title">
-                            Остались вопросы?
+                            Lorem ipsum dolor sit amet.
                         </div>
                         <div className="landing__main__questionsMain">
                             <div className="landing__main__questionsText">
-                                Напишите нам в телеграм
+                                Lorem ipsum dolor sit amet.
                             </div>
                             <Link to={'https://t.me/Frowning_Cat'}>
                                 <div className="landing__main__questionsButton link">
                                     <div>17</div>
                                     <text className="landing__main__questionsButtonText">
-                                        Чат поддержки
+                                        Lorem ipsum.
                                     </text>
                                 </div>
                             </Link>
@@ -297,6 +287,29 @@ export default function lending() {
                     </div>
                 </div>
             </main>
+            <footer className="landing__footer">
+                <div className="landing__footer__divText1">
+                    <Link to={'https://t.me/Frowning_Cat'}>
+                        <text className="landing__footer__telegram">
+                            <div>18</div>
+                            Чат поддержки
+                        </text>
+                    </Link>
+                    <text>©2024. Все права защищены</text>
+                    <Link to={'https://t.me/Frowning_Cat'}>
+                        <text>Условия использования сервиса</text>
+                    </Link>
+                    <Link to={'https://t.me/Frowning_Cat'}>
+                        <text>Политика конфиденциальности</text>
+                    </Link>
+                </div>
+                <div className="landing__footer__divText2">
+                    <text>
+                        Сайт не является публичной офертой согласно положениям
+                        статьи 437 ГК РФ. ИП ..ОГРНИП 317505300078169
+                    </text>
+                </div>
+            </footer>
         </div>
     );
 }

@@ -35,6 +35,14 @@ $footerOfferHeightText: 16.39px;
     cursor: pointer;
 }
 
+.additionalColor {
+    color: $buttonColor;
+}
+
+.additionalWeight {
+    font-weight: $mainSizeText;
+}
+
 .landing {
     &__header {
         height: 60px;
@@ -66,7 +74,7 @@ $footerOfferHeightText: 16.39px;
         }
         &__button {
             height: 36px;
-            width: 150px;
+            width: 100px;
             display: flex;
             color: $buttonTextColor;
             background: $buttonColor;
@@ -78,8 +86,9 @@ $footerOfferHeightText: 16.39px;
             font-size: $footerWeightText;
             line-height: $buttonLineHeightText;
             gap: 10px;
-            padding-left: 16px;
             transition: background-color 1s;
+            box-sizing: border-box;
+            justify-content: center;
         }
         &__button:hover {
             background-color: #bdc0c3;
@@ -101,17 +110,6 @@ $footerOfferHeightText: 16.39px;
             border-radius: 17px;
             justify-content: center;
             align-items: center;
-        }
-        &__typeOfQuestionnaire {
-            width: 196px;
-            height: 49px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            background-color: $headerBackgroundColor;
-            border-radius: 46px;
-            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 4%));
         }
         &__topBlok {
             display: grid;
@@ -335,6 +333,35 @@ $footerOfferHeightText: 16.39px;
             font-size: $mainWeightText;
             line-height: $headerLineHeightText;
             color: $headerBackgroundColor;
+        }
+    }
+    &__footer {
+        background-color: $footerBackgroundColor;
+        height: 100px;
+        font-size: $footerWeightText;
+        line-height: $footerLineHeightText;
+        color: $additionalTextColor;
+        display: grid;
+        &__divText1 {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__telegram {
+            color: $headerBackgroundColor;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        &__divText2 {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: $footerOfferWeightText;
+            font-weight: $mainWeightText;
+            line-height: $footerOfferHeightText;
         }
     }
 }
