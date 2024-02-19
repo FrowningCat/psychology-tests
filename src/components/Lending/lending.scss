@@ -79,21 +79,24 @@ summary {
         line-height: $headerLineHeightText;
         &__block {
             height: 24px;
-            width: 431px;
+            width: 451px;
             display: flex;
             gap: 40px;
             margin-top: 18px;
             margin-left: 706px;
             align-items: center;
             &__imgFlag {
+                height: 24px;
                 width: 48px;
                 display: flex;
                 gap: 8px;
+                align-items: center;
             }
             &__tg {
                 width: 152px;
                 display: flex;
                 gap: 8px;
+                align-items: center;
             }
             &__button {
                 height: 36px;
@@ -121,6 +124,7 @@ summary {
     }
     &__main {
         &__topDiv {
+            position: absolute;
             width: 484px;
             display: grid;
             gap: 40px;
@@ -239,6 +243,7 @@ summary {
             margin-top: -35px;
             &__submissionOfBocuments {
                 display: grid;
+                position: absolute;
                 width: 556px;
                 gap: 68px;
                 margin-left: 15%;
@@ -365,6 +370,7 @@ summary {
                 color: $headerBackgroundColor;
                 display: flex;
                 gap: 8px;
+                align-items: center;
             }
             &__telegram:hover {
                 color: $selectedTextColor;
