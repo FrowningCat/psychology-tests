@@ -1,10 +1,41 @@
+$textColor: #333;
+$discriptionTextColor: #747474;
+$additionalTextColor: #7a7a7a;
+$rareTextColor: #8e8e8e;
+$selectedTextColor: #0052b4;
+$numberBackgroundColor: #b5d7ff;
+$buttonColor: #0052b4;
+$buttonTextColor: #fff;
+$changeParametersBackgroundColor: #fff;
+$mainBackgroundColor: #f7f7f7;
+$borderColor: #e1e1e1;
+$btnChangeColor: #bdc0c3;
+
+$mainWeightText: 600;
+$additionalWeightText: 500;
+$titleWeightText: 700;
+
+$mainSizeText: 20px;
+$changeSizeText: 16px;
+$discriptionSizeText: 14px;
+$titleSizeText: 40px;
+$additionalExplanationSizeText: 16px;
+$btnSize: 16px;
+
+$titleLineHeightText: 52px;
+$additionalTitleLineHeightText: 24px;
+$mainLineHeightText: 26px;
+$explanatoryLineHeightText: 26px;
+$changeLineHeightText: 22px;
+$btnLine: 20px;
+
 .profile {
     margin-top: 66px;
     margin-left: 208px;
     &__h {
-        line-height: 52px;
-        font-size: 40px;
-        font-weight: 700;
+        line-height: $titleLineHeightText;
+        font-size: $titleSizeText;
+        font-weight: $titleWeightText;
         width: 180px;
         height: 52px;
     }
@@ -17,39 +48,38 @@
             text-align: left;
             height: 60px;
             width: 392px;
+            line-height: $mainLineHeightText;
             &__text {
-                line-height: 26px;
-                font-size: 20px;
-                font-weight: 600;
-                color: #333;
+                font-size: $mainSizeText;
+                font-weight: $mainWeightText;
+                color: $textColor;
             }
             &__discriptionText {
                 margin-top: 8px;
-                line-height: 26px;
-                font-size: 14px;
-                font-weight: 500;
-                color: #747474;
+                font-size: $discriptionSizeText;
+                font-weight: $additionalWeightText;
+                color: $discriptionTextColor;
             }
         }
         &__dataUser {
             margin-top: 30px;
             display: grid;
             grid-template-columns: 260px 764px;
-            background-color: #f7f7f7;
-            color: #7a7a7a;
+            background-color: $mainBackgroundColor;
+            color: $additionalTextColor;
             text-align: left;
             &__box {
                 min-height: 54px;
-                border: 1px solid #e1e1e1;
+                border: 1px solid $borderColor;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0 18px;
                 &__change {
-                    line-height: 21.86px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #0052b4;
+                    line-height: $changeLineHeightText;
+                    font-size: $changeSizeText;
+                    font-weight: $mainWeightText;
+                    color: $selectedTextColor;
                 }
             }
         }
@@ -79,7 +109,7 @@
     left: 30%;
     height: 492px;
     width: 524px;
-    background-color: #fff;
+    background-color: $changeParametersBackgroundColor;
     &__vector {
         margin-top: 5%;
         margin-left: 90%;
@@ -90,30 +120,30 @@
         margin-top: 5%;
         margin-left: 12%;
         &__title {
-            line-height: 26px;
-            font-size: 24px;
-            font-weight: 600;
-            color: #333;
+            line-height: $mainLineHeightText;
+            font-size: $additionalTitleLineHeightText;
+            font-weight: $mainWeightText;
+            color: $textColor;
         }
         &__explanation {
             margin-top: 13px;
-            line-height: 26px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #8e8e8e;
+            line-height: $explanatoryLineHeightText;
+            font-size: $additionalExplanationSizeText;
+            font-weight: $additionalWeightText;
+            color: $rareTextColor;
         }
         &__dateNumberAndMail {
             margin-top: 13px;
             display: grid;
-            color: #7a7a7a;
+            color: $additionalTextColor;
             grid-template-rows: repeat(2, 72px);
             grid-template-columns: 141px 263px;
             &__boxDate {
                 display: flex;
                 align-items: center;
                 text-align: left;
-                background-color: #f7f7f7;
-                border: 1px solid #e1e1e1;
+                background-color: $mainBackgroundColor;
+                border: 1px solid $borderColor;
                 padding-left: 15px;
             }
         }
@@ -122,15 +152,15 @@
         display: flex;
         margin-top: 5%;
         margin-left: 12%;
-        background-color: #0052b4;
+        background-color: $buttonColor;
         filter: drop-shadow(0px 0px 7px rgba(0, 82, 180, 24%));
         border-radius: 10px;
         height: 50px;
         width: 210px;
-        line-height: 20px;
-        font-size: 16px;
-        font-weight: 500;
-        color: #fff;
+        line-height: $btnLine;
+        font-size: $btnSize;
+        font-weight: $additionalWeightText;
+        color: $buttonTextColor;
         justify-content: center;
         transition: background-color 1s;
         &__btnText {
@@ -141,6 +171,6 @@
         }
     }
     &__btnChange:hover {
-        background-color: #bdc0c3;
+        background-color: $btnChangeColor;
     }
 }
