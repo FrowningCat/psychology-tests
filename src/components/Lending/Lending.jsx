@@ -1,5 +1,15 @@
 import './lending.css';
 import { Link } from 'react-router-dom';
+import ru from '../../assets/Lending/RU.png';
+import chevronDownGray from '../../assets/Lending/chevron.down.gray.png';
+import arrow from '../../assets/Lending/arrow.png';
+import telegram from '../../assets/Lending/telegram.png';
+import clipboard from '../../assets/Lending/clipboard.png';
+import bg from '../../assets/Lending/bg.png';
+import city from '../../assets/Lending/city.png';
+import iPhone from '../../assets/Lending/iPhone.png';
+import chevron from '../../assets/Lending/chevron.png';
+import vectorTg from '../../assets/Lending/vectorTg.png';
 
 export default function lending() {
     return (
@@ -7,11 +17,15 @@ export default function lending() {
             <header className="landing__header">
                 <div className="landing__header__block">
                     <div className="landing__header__block__imgFlag">
-                        <div>1</div>
-                        <div>2</div>
+                        <img src={ru} alt="ru img"></img>
+                        <img
+                            src={chevronDownGray}
+                            alt="chevronDownGray img"
+                            className="link"
+                        ></img>
                     </div>
                     <div className="landing__header__block__tg">
-                        <div>3</div>
+                        <img src={telegram} alt="telegram"></img>
                         <Link to={'https://t.me/Frowning_Cat'}>
                             <text className="landing__header__block__text link">
                                 Чат поддержки
@@ -53,11 +67,11 @@ export default function lending() {
                     <Link to={'/authorization'} className="link_btn">
                         <div className="landing__main__topDiv__topBlok__topButton link">
                             <text>Lorem, ipsum.</text>
-                            <div>5</div>
+                            <img src={arrow} alt="arrow png"></img>
                         </div>
                     </Link>
                 </div>
-                <div className="landing__main__bg">6</div>
+                <img src={bg} alt="bg png" className="landing__main__bg"></img>
                 <div className="landing__main__info">
                     <div className="landing__main__info__infoTitle">
                         <text className="landing__main__info__infoTitle__title">
@@ -71,7 +85,7 @@ export default function lending() {
                     <div className="landing__main__info__infoBlock">
                         <div className="landing__main__info__infoBlock__infoDiv">
                             <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <div>6</div>
+                                <img src={clipboard} alt="clipboard png"></img>
                             </div>
                             <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
@@ -82,7 +96,7 @@ export default function lending() {
                         </div>
                         <div className="landing__main__info__infoBlock__infoDiv">
                             <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <div>6</div>
+                                <img src={clipboard} alt="clipboard png"></img>
                             </div>
                             <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
@@ -93,7 +107,7 @@ export default function lending() {
                         </div>
                         <div className="landing__main__info__infoBlock__infoDiv">
                             <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <div>6</div>
+                                <img src={clipboard} alt="clipboard png"></img>
                             </div>
                             <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
@@ -104,7 +118,7 @@ export default function lending() {
                         </div>
                         <div className="landing__main__info__infoBlock__infoDiv">
                             <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <div>6</div>
+                                <img src={clipboard} alt="clipboard png"></img>
                             </div>
                             <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
@@ -115,7 +129,11 @@ export default function lending() {
                         </div>
                     </div>
                 </div>
-                <div className="landing__main__city">10</div>
+                <img
+                    src={city}
+                    alt="city png"
+                    className="landing__main__city"
+                ></img>
                 <div className="landing__main__foooter">
                     <div className="landing__main__foooter__submissionOfBocuments">
                         <div className="landing__main__foooter__submissionOfBocuments__title">
@@ -140,7 +158,7 @@ export default function lending() {
                             </div>
                             <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    1
+                                    2
                                 </div>
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
                                     <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
@@ -156,7 +174,7 @@ export default function lending() {
                             </div>
                             <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    1
+                                    3
                                 </div>
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
                                     <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
@@ -172,7 +190,7 @@ export default function lending() {
                             </div>
                             <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    1
+                                    4
                                 </div>
                                 <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
                                     <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
@@ -188,7 +206,11 @@ export default function lending() {
                             </div>
                         </div>
                     </div>
-                    <div className="landing__main__foooter__iPhone">11</div>
+                    <img
+                        src={iPhone}
+                        alt="iPhone png"
+                        className="landing__main__foooter__iPhone"
+                    ></img>
                     <div className="landing__main__foooter__faq">
                         <div className="landing__main__foooter__faq__title">
                             Lorem
@@ -197,7 +219,11 @@ export default function lending() {
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">12</div>
+                                    <img
+                                        src={chevron}
+                                        alt="chevron png"
+                                        className="chevron link"
+                                    ></img>
                                 </summary>
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
@@ -216,7 +242,11 @@ export default function lending() {
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">12</div>
+                                    <img
+                                        src={chevron}
+                                        alt="chevron png"
+                                        className="chevron link"
+                                    ></img>
                                 </summary>
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
@@ -235,7 +265,11 @@ export default function lending() {
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">12</div>
+                                    <img
+                                        src={chevron}
+                                        alt="chevron png"
+                                        className="chevron link"
+                                    ></img>
                                 </summary>
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
@@ -254,7 +288,11 @@ export default function lending() {
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">12</div>
+                                    <img
+                                        src={chevron}
+                                        alt="chevron png"
+                                        className="chevron link"
+                                    ></img>
                                 </summary>
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
@@ -273,7 +311,11 @@ export default function lending() {
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">12</div>
+                                    <img
+                                        src={chevron}
+                                        alt="chevron png"
+                                        className="chevron link"
+                                    ></img>
                                 </summary>
                                 <div>
                                     Lorem ipsum, dolor sit amet consectetur
@@ -301,7 +343,11 @@ export default function lending() {
                             </div>
                             <Link to={'https://t.me/Frowning_Cat'}>
                                 <div className="landing__main__foooter__questions__questionsMain__questionsButton link">
-                                    <div className="link">17</div>
+                                    <img
+                                        src={vectorTg}
+                                        alt="vectorTg png"
+                                        className="link"
+                                    ></img>
                                     <text className="landing__main__foooter__questions__questionsMain__questionsButton__questionsButtonText link">
                                         Lorem ipsum.
                                     </text>
@@ -315,7 +361,7 @@ export default function lending() {
                 <div className="landing__footer__divText1">
                     <Link to={'https://t.me/Frowning_Cat'}>
                         <div className="landing__footer__divText1__telegram link">
-                            <div className="link">18</div>
+                            <img src={telegram} alt="telegram"></img>
                             <div className="link">Чат поддержки</div>
                         </div>
                     </Link>
