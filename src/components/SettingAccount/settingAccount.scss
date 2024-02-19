@@ -145,6 +145,12 @@ $btnLine: 20px;
                 background-color: $mainBackgroundColor;
                 border: 1px solid $borderColor;
                 padding-left: 15px;
+                &__input {
+                    width: 70%;
+                }
+                &__eye {
+                    margin-left: 10%;
+                }
             }
         }
     }

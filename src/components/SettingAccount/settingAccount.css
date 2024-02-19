@@ -118,6 +118,12 @@
   border: 1px solid #e1e1e1;
   padding-left: 15px;
 }
+.changeParameters__mainBlock__dateNumberAndMail__boxDate__input {
+  width: 70%;
+}
+.changeParameters__mainBlock__dateNumberAndMail__boxDate__eye {
+  margin-left: 10%;
+}
 .changeParameters__oldPassNone {
   display: none;
 }

@@ -4,6 +4,7 @@ import './settingAccount.css';
 
 import { useState } from 'react';
 import vector from '../../assets/SettingAccount/Vector.png';
+import eye from '../../assets/SettingAccount/eye.png';
 let oldEmail = 'dxgfchvjhbkjnlkm@gmail.com';
 let oldNumber = '+7 (999) - 45 - 45';
 
@@ -90,6 +91,33 @@ export default function SettingAccount() {
             );
         }
     };
+
+    function eyeClick1() {
+        let password = document.getElementById('oldPass');
+        if (password.getAttribute('type') == 'password') {
+            password.setAttribute('type', 'text');
+        } else {
+            password.setAttribute('type', 'password');
+        }
+    }
+
+    function eyeClick2() {
+        let password = document.getElementById('newPass');
+        if (password.getAttribute('type') == 'password') {
+            password.setAttribute('type', 'text');
+        } else {
+            password.setAttribute('type', 'password');
+        }
+    }
+
+    function eyeClick3() {
+        let password = document.getElementById('newPassCheck');
+        if (password.getAttribute('type') == 'password') {
+            password.setAttribute('type', 'text');
+        } else {
+            password.setAttribute('type', 'password');
+        }
+    }
 
     return (
         <>
@@ -271,24 +299,51 @@ export default function SettingAccount() {
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Старый пароль
                             </div>
-                            <input
-                                id="oldPass"
-                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
-                            ></input>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                <input
+                                    id="oldPass"
+                                    type="password"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__input"
+                                ></input>
+                                <img
+                                    onClick={() => eyeClick1()}
+                                    src={eye}
+                                    alt="eye img"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__eye link"
+                                />
+                            </div>
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Новый пароль
                             </div>
-                            <input
-                                id="newPass"
-                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
-                            ></input>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                <input
+                                    id="newPass"
+                                    type="password"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__input"
+                                ></input>
+                                <img
+                                    onClick={() => eyeClick2()}
+                                    src={eye}
+                                    alt="eye img"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__eye link"
+                                />
+                            </div>
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Повторите новый пароль
                             </div>
-                            <input
-                                id="newPassCheck"
-                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
-                            ></input>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                <input
+                                    id="newPassCheck"
+                                    type="password"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__input"
+                                ></input>
+                                <img
+                                    onClick={() => eyeClick3()}
+                                    src={eye}
+                                    alt="eye img"
+                                    className="changeParameters__mainBlock__dateNumberAndMail__boxDate__eye link"
+                                />
+                            </div>
                         </div>
                         <div
                             id="errorOldPass"
