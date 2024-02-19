@@ -6,88 +6,105 @@ import { useState } from 'react';
 let oldEmail = 'dxgfchvjhbkjnlkm@gmail.com';
 let oldNumber = '+7 (999) - 45 - 45';
 
-export default function Profile() {
-    const [style1, setStyle1] = useState('display_none');
-    const [style2, setStyle2] = useState('display_none');
-    const [style3, setStyle3] = useState('display_none');
+export default function SettingAccount() {
+    const [style1, setStyle1] = useState('displayNone');
+    const [style2, setStyle2] = useState('displayNone');
+    const [style3, setStyle3] = useState('displayNone');
     let [newEmail, setEmail] = useState();
     let [newNumber, setNumber] = useState();
 
     const changeNumber = () => {
-        setStyle1('display_block changeParametersNum_bg');
+        setStyle1('displayBlock changeParametersBg');
     };
 
     const closeChangeNumber = () => {
-        setStyle1('display_none');
+        setStyle1('displayNone');
     };
 
     const closeChangeNumberWithСhanges = () => {
         oldNumber = newNumber;
-        setStyle1('display_none');
+        setStyle1('displayNone');
     };
 
     const changeMail = () => {
-        setStyle2('display_block changeParametersMail_bg');
+        setStyle2('displayBlock changeParametersBg');
     };
 
     const closeChangeMail = () => {
-        setStyle2('display_none');
+        setStyle2('displayNone');
     };
 
     function closeChangeMailWithСhanges() {
         oldEmail = 'vsavinkov60@gmail.com';
-        setStyle2('display_none');
+        setStyle2('displayNone');
     }
 
     const changePassword = () => {
-        setStyle3('display_block changeParametersPass_bg');
+        setStyle3('displayBlock changeParametersBg');
     };
 
     const closeChangePassword = () => {
-        setStyle3('display_none');
+        setStyle3('displayNone');
     };
 
     return (
-        <div>
+        <>
             <div className="profile">
-                <div className="h">Профиль</div>
-                <div className="personal_information">
-                    <div className="personal_information_heading">
-                        <div className="personal_information_text">
+                <div className="profile__h">Профиль</div>
+                <div className="profile__personalInformation">
+                    <div className="profile__personalInformation__heading">
+                        <div className="profile__personalInformation__heading__text">
                             Персональная информация
                         </div>
-                        <div className="personal_information_discription_text">
+                        <div className="profile__personalInformation__heading__discriptionText">
                             Персональная информация описание описание описание
                         </div>
                     </div>
 
-                    <div className="data_user">
-                        <div className="box">Полные имя и фамилия</div>
-                        <div className="box">Vlad S</div>
-                        <div className="box">Telegram</div>
-                        <div className="box">@pupupupu</div>
-                        <div className="box">Номер телефона</div>
-                        <div className="box">
+                    <div className="profile__personalInformation__dataUser">
+                        <div className="profile__personalInformation__dataUser__box">
+                            Полные имя и фамилия
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
+                            Vlad S
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
+                            Telegram
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
+                            @pupupupu
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
+                            Номер телефона
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
                             <text className="">{oldNumber}</text>
                             <text
-                                className="change link"
+                                className="profile__personalInformation__dataUser__box__change link"
                                 onClick={changeNumber}
                             >
                                 Изменить
                             </text>
                         </div>
-                        <div className="box">Адрес электронной почты</div>
-                        <div className="box">
+                        <div className="profile__personalInformation__dataUser__box">
+                            Адрес электронной почты
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
                             <text className="">{oldEmail}</text>
-                            <text className="change link" onClick={changeMail}>
+                            <text
+                                className="profile__personalInformation__dataUser__box__change link"
+                                onClick={changeMail}
+                            >
                                 Изменить
                             </text>
                         </div>
-                        <div className="box">Пароль</div>
-                        <div className="box">
+                        <div className="profile__personalInformation__dataUser__box">
+                            Пароль
+                        </div>
+                        <div className="profile__personalInformation__dataUser__box">
                             <text className=""></text>
                             <text
-                                className="change link"
+                                className="profile__personalInformation__dataUser__box__change link"
                                 onClick={changePassword}
                             >
                                 Изменить
@@ -99,23 +116,32 @@ export default function Profile() {
 
             <div className={style1}>
                 <div className="changeParameters">
-                    <div className="vector link" onClick={closeChangeNumber}>
+                    <div
+                        className="changeParameters__vector link"
+                        onClick={closeChangeNumber}
+                    >
                         1
                     </div>
-                    <div className="main_block">
-                        <div className="title">Изменить номер телефона</div>
-                        <div className="explanation">
+                    <div className="changeParameters__mainBlock">
+                        <div className="changeParameters__mainBlock__title">
+                            Изменить номер телефона
+                        </div>
+                        <div className="changeParameters__mainBlock__explanation">
                             Какой-то текст про изменение номера и требования к
                             нему
                         </div>
-                        <div className="date_number_and_mail">
-                            <div className="box_date">
+                        <div className="changeParameters__mainBlock__dateNumberAndMail">
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Старый номер телефона
                             </div>
-                            <div className="box_date">{oldNumber}</div>
-                            <div className="box_date">Новый номер телефона</div>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                {oldNumber}
+                            </div>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                Новый номер телефона
+                            </div>
                             <input
-                                className="box_date"
+                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
                                 type="text"
                                 onChange={() => setNumber()}
                                 required
@@ -123,10 +149,10 @@ export default function Profile() {
                         </div>
                     </div>
                     <div
-                        className="btn_change link"
+                        className="changeParameters__btnChange link"
                         onClick={closeChangeNumberWithСhanges}
                     >
-                        <text className="btn_text">
+                        <text className="changeParameters__btnChange__btnText">
                             Изменить номер телефона
                         </text>
                     </div>
@@ -135,21 +161,32 @@ export default function Profile() {
 
             <div className={style2}>
                 <div className="changeParameters">
-                    <div className="vector link" onClick={closeChangeMail}>
+                    <div
+                        className="changeParameters__vector link"
+                        onClick={closeChangeMail}
+                    >
                         2
                     </div>
-                    <div className="main_block">
-                        <div className="title">Изменить электронную почту</div>
-                        <div className="explanation">
+                    <div className="changeParameters__mainBlock">
+                        <div className="changeParameters__mainBlock__title">
+                            Изменить электронную почту
+                        </div>
+                        <div className="changeParameters__mainBlock__explanation">
                             Какой-то текст про изменение почты и требования к
                             нему
                         </div>
-                        <div className="date_number_and_mail">
-                            <div className="box_date">Старая почта</div>
-                            <div className="box_date">{oldEmail}</div>
-                            <div className="box_date">Новая почта</div>
+                        <div className="changeParameters__mainBlock__dateNumberAndMail">
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                Старая почта
+                            </div>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                {oldEmail}
+                            </div>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                Новая почта
+                            </div>
                             <input
-                                className="box_date"
+                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
                                 type="email"
                                 onChange={() => setEmail()}
                                 required
@@ -158,44 +195,57 @@ export default function Profile() {
                     </div>
 
                     <div
-                        className="btn_change link"
+                        className="changeParameters__btnChange link"
                         onClick={closeChangeMailWithСhanges}
                     >
-                        <text className="btn_text">Изменить почту</text>
+                        <text className="changeParameters__btnChange__btnText">
+                            Изменить почту
+                        </text>
                     </div>
                 </div>
             </div>
 
             <div className={style3}>
                 <div className="changeParameters">
-                    <div className="vector link" onClick={closeChangePassword}>
+                    <div
+                        className="changeParameters__vector link"
+                        onClick={closeChangePassword}
+                    >
                         3
                     </div>
-                    <div className="main_block">
-                        <div className="title">Изменить пароль</div>
-                        <div className="explanation">
+                    <div className="changeParameters__mainBlock">
+                        <div className="changeParameters__mainBlock__title">
+                            Изменить пароль
+                        </div>
+                        <div className="changeParameters__mainBlock__explanation">
                             Какой-то текст про изменение пароля и требования к
                             паролю
                         </div>
-                        <div className="date_password">
-                            <div className="box_date">Старый пароль</div>
-                            <input className="box_date"></input>
-                            <div className="box_date">Новый пароль</div>
-                            <input className="box_date"></input>
-                            <div className="box_date">
+                        <div className="changeParameters__mainBlock__dateNumberAndMail">
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                Старый пароль
+                            </div>
+                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
+                                Новый пароль
+                            </div>
+                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
+                            <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Повторите новый пароль
                             </div>
-                            <input className="box_date"></input>
+                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
                         </div>
                     </div>
                     <div
-                        className="btn_change link"
+                        className="changeParameters__btnChange link"
                         onClick={closeChangePassword}
                     >
-                        <text className="btn_text">Изменить пароль</text>
+                        <text className="changeParameters__btnChange__btnText">
+                            Изменить пароль
+                        </text>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
