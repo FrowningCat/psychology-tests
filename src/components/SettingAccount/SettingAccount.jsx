@@ -13,6 +13,8 @@ export default function SettingAccount() {
     const [style3, setStyle3] = useState('displayNone');
     let [newEmail, setEmail] = useState();
     let [newNumber, setNumber] = useState();
+    const regEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$/;
+    const regPhone = /\++[0-9]/;
 
     const changeNumber = () => {
         setStyle1('displayBlock changeParametersBg');
@@ -23,8 +25,13 @@ export default function SettingAccount() {
     };
 
     const closeChangeNumberWithСhanges = () => {
-        oldNumber = newNumber;
-        setStyle1('displayNone');
+        const phone = document.getElementById('phone').value;
+        if (regPhone.test(phone) === false) {
+            alert('Введите номер телефона');
+        } else {
+            oldNumber = newNumber;
+            setStyle1('displayNone');
+        }
     };
 
     const changeMail = () => {
@@ -36,8 +43,13 @@ export default function SettingAccount() {
     };
 
     function closeChangeMailWithСhanges() {
-        oldEmail = 'vsavinkov60@gmail.com';
-        setStyle2('displayNone');
+        const email = document.getElementById('email').value;
+        if (regEmail.test(email) === false) {
+            document.getElementById('email').value = 'Введите настоящую почту';
+        } else {
+            oldEmail = 'vsavinkov60@gmail.com';
+            setStyle2('displayNone');
+        }
     }
 
     const changePassword = () => {
@@ -46,6 +58,37 @@ export default function SettingAccount() {
 
     const closeChangePassword = () => {
         setStyle3('displayNone');
+    };
+
+    const closeChangePasswordWithСhanges = () => {
+        const oldPass = document.getElementById('oldPass').value;
+        const newPass = document.getElementById('newPass').value;
+        const newPassCheck = document.getElementById('newPassCheck').value;
+        let errorOldPass = document.getElementById('errorOldPass');
+        let errorNewPass = document.getElementById('errorNewPass');
+        if (oldPass != '') {
+            if ((newPass == newPassCheck) & (newPass != '')) {
+                errorNewPass.setAttribute(
+                    'class',
+                    'changeParameters__newPassNone'
+                );
+                setStyle3('displayNone');
+            } else {
+                errorOldPass.setAttribute(
+                    'class',
+                    'changeParameters__oldPassNone'
+                );
+                errorNewPass.setAttribute(
+                    'class',
+                    'changeParameters__newPassBlock'
+                );
+            }
+        } else {
+            errorOldPass.setAttribute(
+                'class',
+                'changeParameters__oldPassBlock'
+            );
+        }
     };
 
     return (
@@ -144,6 +187,7 @@ export default function SettingAccount() {
                             <input
                                 className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
                                 type="text"
+                                id="phone"
                                 onChange={() => setNumber()}
                                 required
                             ></input>
@@ -189,6 +233,7 @@ export default function SettingAccount() {
                             <input
                                 className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
                                 type="email"
+                                id="email"
                                 onChange={() => setEmail()}
                                 required
                             ></input>
@@ -226,20 +271,41 @@ export default function SettingAccount() {
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Старый пароль
                             </div>
-                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
+                            <input
+                                id="oldPass"
+                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
+                            ></input>
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Новый пароль
                             </div>
-                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
+                            <input
+                                id="newPass"
+                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
+                            ></input>
                             <div className="changeParameters__mainBlock__dateNumberAndMail__boxDate">
                                 Повторите новый пароль
                             </div>
-                            <input className="changeParameters__mainBlock__dateNumberAndMail__boxDate"></input>
+                            <input
+                                id="newPassCheck"
+                                className="changeParameters__mainBlock__dateNumberAndMail__boxDate"
+                            ></input>
+                        </div>
+                        <div
+                            id="errorOldPass"
+                            className="changeParameters__oldPassNone"
+                        >
+                            Введите старый пароль
+                        </div>
+                        <div
+                            id="errorNewPass"
+                            className="changeParameters__newPassNone"
+                        >
+                            Пароли не совпали
                         </div>
                     </div>
                     <div
                         className="changeParameters__btnChange link"
-                        onClick={closeChangePassword}
+                        onClick={closeChangePasswordWithСhanges}
                     >
                         <text className="changeParameters__btnChange__btnText">
                             Изменить пароль

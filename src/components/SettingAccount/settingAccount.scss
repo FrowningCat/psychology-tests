@@ -148,6 +148,22 @@ $btnLine: 20px;
             }
         }
     }
+    &__oldPassNone {
+        display: none;
+    }
+    &__oldPassBlock {
+        display: block;
+        margin-top: 10px;
+        color: red;
+    }
+    &__newPassNone {
+        display: none;
+    }
+    &__newPassBlock {
+        margin-top: 10px;
+        display: block;
+        color: red;
+    }
     &__btnChange {
         display: flex;
         margin-top: 5%;

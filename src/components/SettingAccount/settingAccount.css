@@ -118,6 +118,22 @@
   border: 1px solid #e1e1e1;
   padding-left: 15px;
 }
+.changeParameters__oldPassNone {
+  display: none;
+}
+.changeParameters__oldPassBlock {
+  display: block;
+  margin-top: 10px;
+  color: red;
+}
+.changeParameters__newPassNone {
+  display: none;
+}
+.changeParameters__newPassBlock {
+  margin-top: 10px;
+  display: block;
+  color: red;
+}
 .changeParameters__btnChange {
   display: flex;
   margin-top: 5%;
