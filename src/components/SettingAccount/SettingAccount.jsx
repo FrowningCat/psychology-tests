@@ -3,6 +3,7 @@ import './settingAccount.css';
 ('use client');
 
 import { useState } from 'react';
+import vector from '../../assets/SettingAccount/Vector.png';
 let oldEmail = 'dxgfchvjhbkjnlkm@gmail.com';
 let oldNumber = '+7 (999) - 45 - 45';
 
@@ -116,12 +117,12 @@ export default function SettingAccount() {
 
             <div className={style1}>
                 <div className="changeParameters">
-                    <div
+                    <img
+                        src={vector}
+                        alt="vector png"
                         className="changeParameters__vector link"
                         onClick={closeChangeNumber}
-                    >
-                        1
-                    </div>
+                    ></img>
                     <div className="changeParameters__mainBlock">
                         <div className="changeParameters__mainBlock__title">
                             Изменить номер телефона
@@ -161,12 +162,12 @@ export default function SettingAccount() {
 
             <div className={style2}>
                 <div className="changeParameters">
-                    <div
+                    <img
+                        src={vector}
+                        alt="vector png"
                         className="changeParameters__vector link"
                         onClick={closeChangeMail}
-                    >
-                        2
-                    </div>
+                    ></img>
                     <div className="changeParameters__mainBlock">
                         <div className="changeParameters__mainBlock__title">
                             Изменить электронную почту
@@ -207,12 +208,12 @@ export default function SettingAccount() {
 
             <div className={style3}>
                 <div className="changeParameters">
-                    <div
+                    <img
+                        src={vector}
+                        alt="vector png"
                         className="changeParameters__vector link"
                         onClick={closeChangePassword}
-                    >
-                        3
-                    </div>
+                    ></img>
                     <div className="changeParameters__mainBlock">
                         <div className="changeParameters__mainBlock__title">
                             Изменить пароль
