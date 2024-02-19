@@ -1,5 +1,8 @@
 import './lending.css';
 import { Link } from 'react-router-dom';
+import { information } from './data/infoBlock';
+import { submissionOfBocumentsStage } from './data/submissionOfBocumentsStage';
+import { details } from './data/details';
 import ru from '../../assets/Lending/RU.png';
 import chevronDownGray from '../../assets/Lending/chevron.down.gray.png';
 import arrow from '../../assets/Lending/arrow.png';
@@ -12,6 +15,59 @@ import chevron from '../../assets/Lending/chevron.png';
 import vectorTg from '../../assets/Lending/vectorTg.png';
 
 export default function lending() {
+    function InfoBlock({ title, text }) {
+        return (
+            <div className="landing__main__info__infoBlock__infoDiv">
+                <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
+                    <img src={clipboard} alt="clipboard png"></img>
+                </div>
+                <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
+                    {title}
+                </div>
+                <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
+                    {text}
+                </div>
+            </div>
+        );
+    }
+
+    function SubmissionOfBocumentsStage({ number, title, text }) {
+        return (
+            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
+                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
+                    {number}
+                </div>
+                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
+                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
+                        {title}
+                    </div>
+                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
+                        {text}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    function Details({ title, text, selectedText }) {
+        return (
+            <details>
+                <summary>
+                    {title}{' '}
+                    <img
+                        src={chevron}
+                        alt="chevron png"
+                        className="chevron link"
+                    ></img>
+                </summary>
+                <div>
+                    {text} <br />
+                    <text className="additionalColor">{selectedText}</text>
+                </div>
+            </details>
+        );
+    }
+
     return (
         <div className="landing">
             <header className="landing__header">
@@ -83,50 +139,9 @@ export default function lending() {
                         </text>
                     </div>
                     <div className="landing__main__info__infoBlock">
-                        <div className="landing__main__info__infoBlock__infoDiv">
-                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <img src={clipboard} alt="clipboard png"></img>
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
-                                Lorem
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                        </div>
-                        <div className="landing__main__info__infoBlock__infoDiv">
-                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <img src={clipboard} alt="clipboard png"></img>
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
-                                Lorem
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                        </div>
-                        <div className="landing__main__info__infoBlock__infoDiv">
-                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <img src={clipboard} alt="clipboard png"></img>
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
-                                Lorem
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                        </div>
-                        <div className="landing__main__info__infoBlock__infoDiv">
-                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
-                                <img src={clipboard} alt="clipboard png"></img>
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
-                                Lorem
-                            </div>
-                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                        </div>
+                        {information.map((way) => (
+                            <InfoBlock key={way.title} {...way} />
+                        ))}
                     </div>
                 </div>
                 <img
@@ -140,70 +155,12 @@ export default function lending() {
                             Lorem, ipsum.
                         </div>
                         <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages">
-                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    1
-                                </div>
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
-                                        Lorem ipsum dolor sit.
-                                    </div>
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Omnis ex sunt impedit
-                                        quasi labore quaerat quibusdam ipsa
-                                        similique dolorum odit.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    2
-                                </div>
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
-                                        Lorem ipsum dolor sit.
-                                    </div>
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Omnis ex sunt impedit
-                                        quasi labore quaerat quibusdam ipsa
-                                        similique dolorum odit.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    3
-                                </div>
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
-                                        Lorem ipsum dolor sit.
-                                    </div>
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Omnis ex sunt impedit
-                                        quasi labore quaerat quibusdam ipsa
-                                        similique dolorum odit.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
-                                    4
-                                </div>
-                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
-                                        Lorem ipsum dolor sit.
-                                    </div>
-                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Omnis ex sunt impedit
-                                        quasi labore quaerat quibusdam ipsa
-                                        similique dolorum odit.
-                                    </div>
-                                </div>
-                            </div>
+                            {submissionOfBocumentsStage.map((way) => (
+                                <SubmissionOfBocumentsStage
+                                    key={way.number}
+                                    {...way}
+                                />
+                            ))}
                         </div>
                     </div>
                     <img
@@ -216,121 +173,9 @@ export default function lending() {
                             Lorem
                         </div>
                         <div className="landing__main__foooter__faq__faqDetails">
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet.{' '}
-                                    <img
-                                        src={chevron}
-                                        alt="chevron png"
-                                        className="chevron link"
-                                    ></img>
-                                </summary>
-                                <div>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam, earum. <br />В
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Excepturi, necessitatibus?
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nemo, eveniet!{' '}
-                                    <text className="additionalColor">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Laboriosam, similique!
-                                    </text>
-                                </div>
-                            </details>
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet.{' '}
-                                    <img
-                                        src={chevron}
-                                        alt="chevron png"
-                                        className="chevron link"
-                                    ></img>
-                                </summary>
-                                <div>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam, earum. <br />В
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Excepturi, necessitatibus?
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nemo, eveniet!{' '}
-                                    <text className="additionalColor">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Laboriosam, similique!
-                                    </text>
-                                </div>
-                            </details>
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet.{' '}
-                                    <img
-                                        src={chevron}
-                                        alt="chevron png"
-                                        className="chevron link"
-                                    ></img>
-                                </summary>
-                                <div>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam, earum. <br />В
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Excepturi, necessitatibus?
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nemo, eveniet!{' '}
-                                    <text className="additionalColor">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Laboriosam, similique!
-                                    </text>
-                                </div>
-                            </details>
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet.{' '}
-                                    <img
-                                        src={chevron}
-                                        alt="chevron png"
-                                        className="chevron link"
-                                    ></img>
-                                </summary>
-                                <div>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam, earum. <br />В
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Excepturi, necessitatibus?
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nemo, eveniet!{' '}
-                                    <text className="additionalColor">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Laboriosam, similique!
-                                    </text>
-                                </div>
-                            </details>
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet.{' '}
-                                    <img
-                                        src={chevron}
-                                        alt="chevron png"
-                                        className="chevron link"
-                                    ></img>
-                                </summary>
-                                <div>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Quibusdam, earum. <br />В
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Excepturi, necessitatibus?
-                                    <br />
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nemo, eveniet!{' '}
-                                    <text className="additionalColor">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Laboriosam, similique!
-                                    </text>
-                                </div>
-                            </details>
+                            {details.map((way) => (
+                                <Details key={way.title} {...way} />
+                            ))}
                         </div>
                     </div>
                     <div className="landing__main__foooter__questions">
