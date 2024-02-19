@@ -6,40 +6,40 @@ export default function lending() {
         <div className="landing">
             <header className="landing__header">
                 <div className="landing__header__block">
-                    <div className="landing__header__imgFlag">
+                    <div className="landing__header__block__imgFlag">
                         <div>1</div>
                         <div>2</div>
                     </div>
-                    <div className="landing__header__tg">
+                    <div className="landing__header__block__tg">
                         <div>3</div>
                         <Link to={'https://t.me/Frowning_Cat'}>
-                            <text className="landing__header__text link">
+                            <text className="landing__header__block__text link">
                                 Чат поддержки
                             </text>
                         </Link>
                     </div>
                     <Link to={'/authorization'} className="landing__link_btn">
-                        <div className="landing__header__enterText">
-                            <text className="landing__header__text link">
+                        <div className="landing__heade__blockr__enterText">
+                            <text className="landing__header__block__text link">
                                 Вход
                             </text>
                         </div>
                     </Link>
+                    <Link to={'/personalAccount'} className="link_btn">
+                        <div className="landing__header__block__button">
+                            <text className="link">Тесты</text>
+                        </div>
+                    </Link>
                 </div>
-                <Link to={'/personalAccount'} className="link_btn">
-                    <div className="landing__header__button">
-                        <text className="link">Тесты</text>
-                    </div>
-                </Link>
             </header>
             <main className="landing__main">
                 <div className="landing__main__topDiv">
-                    <div className="landing__main__topBlok">
-                        <div className="landing__main__topBlokTitle">
+                    <div className="landing__main__topDiv__topBlok">
+                        <div className="landing__main__topDiv__topBlok__topBlokTitle">
                             Lorem <text className="additionalColor">Lorem</text>{' '}
                             Lorem ipsum dolor sit amet.
                         </div>
-                        <div className="main__topBlokText">
+                        <div className="landing__main__topDiv__topBlok__topBlokText">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Obcaecati eum laudantium beatae incidunt
                             tempore consectetur, rerum neque voluptatem
@@ -51,7 +51,7 @@ export default function lending() {
                         </div>
                     </div>
                     <Link to={'/authorization'} className="link_btn">
-                        <div className="landing__main__topButton link">
+                        <div className="landing__main__topDiv__topBlok__topButton link">
                             <text>Lorem, ipsum.</text>
                             <div>5</div>
                         </div>
@@ -59,57 +59,57 @@ export default function lending() {
                 </div>
                 <div className="landing__main__bg">6</div>
                 <div className="landing__main__info">
-                    <div className="landing__main__infoTitle">
-                        <text className="landing__main__title">
+                    <div className="landing__main__info__infoTitle">
+                        <text className="landing__main__info__infoTitle__title">
                             Lorem ipsum dolor sit amet.
                         </text>
-                        <text className="landing__main__infoText">
+                        <text className="landing__main__info__infoTitle__infoText">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Eaque, enim!
                         </text>
                     </div>
-                    <div className="landing__main__infoBlock">
-                        <div className="landing__main__infoDiv">
-                            <div className="landing__main__Clipboard">
+                    <div className="landing__main__info__infoBlock">
+                        <div className="landing__main__info__infoBlock__infoDiv">
+                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
                                 <div>6</div>
                             </div>
-                            <div className="landing__main__infoBlockTitle">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
                             </div>
-                            <div className="landing__main__infoBlockText">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
                                 Lorem ipsum dolor sit amet.
                             </div>
                         </div>
-                        <div className="landing__main__infoDiv">
-                            <div className="landing__main__Clipboard">
-                                <div>7</div>
+                        <div className="landing__main__info__infoBlock__infoDiv">
+                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
+                                <div>6</div>
                             </div>
-                            <div className="landing__main__infoBlockTitle">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
                             </div>
-                            <div className="landing__main__infoBlockText">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
                                 Lorem ipsum dolor sit amet.
                             </div>
                         </div>
-                        <div className="landing__main__infoDiv">
-                            <div className="landing__main__Clipboard">
-                                <div>8</div>
+                        <div className="landing__main__info__infoBlock__infoDiv">
+                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
+                                <div>6</div>
                             </div>
-                            <div className="landing__main__infoBlockTitle">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
                             </div>
-                            <div className="landing__main__infoBlockText">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
                                 Lorem ipsum dolor sit amet.
                             </div>
                         </div>
-                        <div className="landing__main__infoDiv">
-                            <div className="landing__main__Clipboard">
-                                <div>9</div>
+                        <div className="landing__main__info__infoBlock__infoDiv">
+                            <div className="landing__main__info__infoBlock__infoDiv__Clipboard">
+                                <div>6</div>
                             </div>
-                            <div className="landing__main__infoBlockTitle">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockTitle">
                                 Lorem
                             </div>
-                            <div className="landing__main__infoBlockText">
+                            <div className="landing__main__info__infoBlock__infoDiv__infoBlockText">
                                 Lorem ipsum dolor sit amet.
                             </div>
                         </div>
@@ -117,20 +117,20 @@ export default function lending() {
                 </div>
                 <div className="landing__main__city">10</div>
                 <div className="landing__main__foooter">
-                    <div className="landing__main__submissionOfBocuments">
-                        <div className="landing__main__title">
+                    <div className="landing__main__foooter__submissionOfBocuments">
+                        <div className="landing__main__foooter__submissionOfBocuments__title">
                             Lorem, ipsum.
                         </div>
-                        <div className="landing__main__submissionOfBocumentsStages">
-                            <div className="landing__main__submissionOfBocumentsStage">
-                                <div className="landing__main__stageNumber">
+                        <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages">
+                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
                                     1
                                 </div>
-                                <div className="landing__main__stageDiv">
-                                    <div className="landing__main__stageTitle">
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
                                         Lorem ipsum dolor sit.
                                     </div>
-                                    <div className="landing__main__stageText">
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
                                         Lorem, ipsum dolor sit amet consectetur
                                         adipisicing elit. Omnis ex sunt impedit
                                         quasi labore quaerat quibusdam ipsa
@@ -138,58 +138,62 @@ export default function lending() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="landing__main__submissionOfBocumentsStage">
-                                <div className="landing__main__stageNumber">
-                                    2
+                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
+                                    1
                                 </div>
-                                <div className="landing__main__stageDiv">
-                                    <div className="landing__main__stageTitle">
-                                        Lorem, ipsum.
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
+                                        Lorem ipsum dolor sit.
                                     </div>
-                                    <div className="landing__main__stageText">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Quasi, exercitationem.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="landing__main__submissionOfBocumentsStage">
-                                <div className="landing__main__stageNumber">
-                                    3
-                                </div>
-                                <div className="landing__main__stageDiv">
-                                    <div className="landing__main__stageTitle">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div className="landing__main__stageText">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Aliquam, labore?{' '}
-                                        <text className="landing__additionalColor additionalWeight">
-                                            Lorem ipsum dolor sit amet.
-                                        </text>{' '}
-                                        Lorem ipsum dolor sit amet.
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Omnis ex sunt impedit
+                                        quasi labore quaerat quibusdam ipsa
+                                        similique dolorum odit.
                                     </div>
                                 </div>
                             </div>
-                            <div className="landing__main__submissionOfBocumentsStage">
-                                <div className="landing__main__stageNumber">
-                                    4
+                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
+                                    1
                                 </div>
-                                <div className="landing__main__stageDiv">
-                                    <div className="landing__main__stageTitle">
-                                        Lorem, ipsum.
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
+                                        Lorem ipsum dolor sit.
                                     </div>
-                                    <div className="landing__main__stageText">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Magni, distinctio.
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Omnis ex sunt impedit
+                                        quasi labore quaerat quibusdam ipsa
+                                        similique dolorum odit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage">
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageNumber">
+                                    1
+                                </div>
+                                <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv">
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageTitle">
+                                        Lorem ipsum dolor sit.
+                                    </div>
+                                    <div className="landing__main__foooter__submissionOfBocuments__submissionOfBocumentsStages__submissionOfBocumentsStage__stageDiv__stageText">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Omnis ex sunt impedit
+                                        quasi labore quaerat quibusdam ipsa
+                                        similique dolorum odit.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="landing__main__iPhone">11</div>
-                    <div className="landing__main__faq">
-                        <div className="landing__main__title">Lorem</div>
-                        <div className="landing__main__faqDetails">
+                    <div className="landing__main__foooter__iPhone">11</div>
+                    <div className="landing__main__foooter__faq">
+                        <div className="landing__main__foooter__faq__title">
+                            Lorem
+                        </div>
+                        <div className="landing__main__foooter__faq__faqDetails">
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
@@ -211,73 +215,94 @@ export default function lending() {
                             </details>
                             <details>
                                 <summary>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ipsa, voluptates?{' '}
-                                    <div className="chevron link">13</div>
+                                    Lorem ipsum dolor sit amet.{' '}
+                                    <div className="chevron link">12</div>
                                 </summary>
                                 <div>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Vero nulla labore aliquid
-                                    ratione vel ab odio tempora odit quae magni?
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quibusdam, earum. <br />В
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Excepturi, necessitatibus?
+                                    <br />
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nemo, eveniet!{' '}
+                                    <text className="additionalColor">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Laboriosam, similique!
+                                    </text>
                                 </div>
                             </details>
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">14</div>
+                                    <div className="chevron link">12</div>
                                 </summary>
                                 <div>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quibusdam, earum. <br />В
                                     Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nobis pariatur
-                                    necessitatibus fugiat quae ipsam totam,
-                                    autem iusto, commodi vero mollitia ab
-                                    similique, quos consequuntur? Quam similique
-                                    velit expedita commodi accusantium?
-                                </div>
-                            </details>
-                            <details>
-                                <summary>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Dolorem, atque.
-                                    <div className="chevron link">15</div>
-                                </summary>
-                                <div>
+                                    adipisicing elit. Excepturi, necessitatibus?
+                                    <br />
                                     Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nobis pariatur
-                                    necessitatibus fugiat quae ipsam totam,
-                                    autem iusto, commodi vero mollitia ab
-                                    similique, quos consequuntur? Quam similique
-                                    velit expedita commodi accusantium?
+                                    adipisicing elit. Nemo, eveniet!{' '}
+                                    <text className="additionalColor">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Laboriosam, similique!
+                                    </text>
                                 </div>
                             </details>
                             <details>
                                 <summary>
                                     Lorem ipsum dolor sit amet.{' '}
-                                    <div className="chevron link">16</div>
+                                    <div className="chevron link">12</div>
                                 </summary>
                                 <div>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quibusdam, earum. <br />В
                                     Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nobis pariatur
-                                    necessitatibus fugiat quae ipsam totam,
-                                    autem iusto, commodi vero mollitia ab
-                                    similique, quos consequuntur? Quam similique
-                                    velit expedita commodi accusantium?
+                                    adipisicing elit. Excepturi, necessitatibus?
+                                    <br />
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nemo, eveniet!{' '}
+                                    <text className="additionalColor">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Laboriosam, similique!
+                                    </text>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>
+                                    Lorem ipsum dolor sit amet.{' '}
+                                    <div className="chevron link">12</div>
+                                </summary>
+                                <div>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quibusdam, earum. <br />В
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Excepturi, necessitatibus?
+                                    <br />
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nemo, eveniet!{' '}
+                                    <text className="additionalColor">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Laboriosam, similique!
+                                    </text>
                                 </div>
                             </details>
                         </div>
                     </div>
-                    <div className="landing__main__questions">
-                        <div className="landing__main__title">
+                    <div className="landing__main__foooter__questions">
+                        <div className="landing__main__foooter__questions__title">
                             Lorem ipsum dolor sit amet.
                         </div>
-                        <div className="landing__main__questionsMain">
-                            <div className="landing__main__questionsText">
+                        <div className="landing__main__foooter__questions__questionsMain">
+                            <div className="landing__main__foooter__questions__questionsMain__questionsText">
                                 Lorem ipsum dolor sit amet.
                             </div>
                             <Link to={'https://t.me/Frowning_Cat'}>
-                                <div className="landing__main__questionsButton link">
-                                    <div>17</div>
-                                    <text className="landing__main__questionsButtonText">
+                                <div className="landing__main__foooter__questions__questionsMain__questionsButton link">
+                                    <div className="link">17</div>
+                                    <text className="landing__main__foooter__questions__questionsMain__questionsButton__questionsButtonText link">
                                         Lorem ipsum.
                                     </text>
                                 </div>
@@ -289,28 +314,28 @@ export default function lending() {
             <footer className="landing__footer">
                 <div className="landing__footer__divText1">
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text className="landing__footer__telegram link">
-                            <div>18</div>
-                            Чат поддержки
-                        </text>
+                        <div className="landing__footer__divText1__telegram link">
+                            <div className="link">18</div>
+                            <div className="link">Чат поддержки</div>
+                        </div>
                     </Link>
-                    <text className="link">©2024. Все права защищены</text>
+                    <text>©2024. Все права защищены</text>
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text className="link">
+                        <div className="link landing__footer__selectedText">
                             Условия использования сервиса
-                        </text>
+                        </div>
                     </Link>
                     <Link to={'https://t.me/Frowning_Cat'}>
-                        <text className="link">
+                        <div className="link landing__footer__selectedText">
                             Политика конфиденциальности
-                        </text>
+                        </div>
                     </Link>
                 </div>
                 <div className="landing__footer__divText2">
-                    <text>
+                    <div>
                         Сайт не является публичной офертой согласно положениям
                         статьи 437 ГК РФ. ИП ..ОГРНИП 317505300078169
-                    </text>
+                    </div>
                 </div>
             </footer>
         </div>

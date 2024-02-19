@@ -1,35 +1,56 @@
 $mainTextColor: #404040;
 $additionalTextColor: #7a7a7a;
 $rareTextColor: #808080;
-$buttonTextColor: #fff;
 $selectedTextColor: #0052b4;
 $numberBackgroundColor: #b5d7ff;
 $buttonColor: #0052b4;
+$buttonTextColor: #fff;
 $headerBackgroundColor: #fff;
 $mainBackgroundColor: #dfe8eb;
 $footerBackgroundColor: #081627;
 
-$mainFontFamily: 'Manrope';
-$additionalFontFamily: 'Inter';
+$mainWeightText: 600;
+$additionalWeightText: 400;
+$titleWeightText: 700;
 
-$mainSizeText: 600;
-$additionalSizeText: 400;
-$titleSizeText: 700;
+$mainSizeText: 16px;
+$titleSizeText: 44px;
+$headingSizeText: 24px;
+$explanatorySizeText: 18px;
+$footerSizeText: 14px;
+$footerOfferSizeText: 12px;
 
-$mainWeightText: 16px;
-$titleWeightText: 44px;
-$headingWeightText: 24px;
-$explanatoryWeightText: 18px;
-$footerWeightText: 14px;
-$footerOfferWeightText: 12px;
-
-$headerLineHeightText: 21.86px;
+$headerLineHeightText: 22px;
 $buttonLineHeightText: 20px;
-$titleLineHeightText: 53.02px;
-$headingLineHeightText: 36.5px;
-$explanatoryLineHeightText: 25.2px;
-$footerLineHeightText: 19.12px;
-$footerOfferHeightText: 16.39px;
+$titleLineHeightText: 53px;
+$headingLineHeightText: 36px;
+$explanatoryLineHeightText: 25px;
+$footerLineHeightText: 19px;
+$footerOfferHeightText: 16px;
+
+details {
+    background-color: $headerBackgroundColor;
+    border-radius: 12px;
+    padding: 24px;
+    line-height: $explanatoryLineHeightText;
+    font-weight: $additionalWeightText;
+    font-size: $mainSizeText;
+    color: $additionalTextColor;
+}
+
+details > div {
+    padding-top: 18px;
+}
+
+summary {
+    line-height: $explanatoryLineHeightText;
+    font-weight: $titleWeightText;
+    font-size: $headingSizeText;
+    color: $mainTextColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .link:hover {
     cursor: pointer;
@@ -40,58 +61,62 @@ $footerOfferHeightText: 16.39px;
 }
 
 .additionalWeight {
-    font-weight: $mainSizeText;
+    font-weight: $mainWeightText;
+}
+
+.chevron {
+    height: 28px;
+    width: 28px;
 }
 
 .landing {
+    font-size: $mainSizeText;
     &__header {
         height: 60px;
-        width: 100vw;
         display: flex;
         background-color: $headerBackgroundColor;
         filter: drop-shadow(0px 4px 4px rgba(219, 219, 219, 25%));
-        font-size: $mainWeightText;
         line-height: $headerLineHeightText;
         &__block {
             height: 24px;
-            width: 319px;
+            width: 431px;
             display: flex;
             gap: 40px;
             margin-top: 18px;
             margin-left: 706px;
-        }
-        &__imgFlag {
-            width: 48px;
-            display: flex;
-            gap: 8px;
             align-items: center;
-        }
-        &__tg {
-            width: 152px;
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-        &__button {
-            height: 36px;
-            width: 100px;
-            display: flex;
-            color: $buttonTextColor;
-            background: $buttonColor;
-            border-radius: 10px;
-            filter: drop-shadow(0px 4px 7px rgba(0, 82, 180, 24%));
-            margin-top: 12px;
-            margin-left: 46px;
-            align-items: center;
-            font-size: $footerWeightText;
-            line-height: $buttonLineHeightText;
-            gap: 10px;
-            transition: background-color 1s;
-            box-sizing: border-box;
-            justify-content: center;
-        }
-        &__button:hover {
-            background-color: #bdc0c3;
+            &__imgFlag {
+                width: 48px;
+                display: flex;
+                gap: 8px;
+            }
+            &__tg {
+                width: 152px;
+                display: flex;
+                gap: 8px;
+            }
+            &__button {
+                height: 36px;
+                width: 100px;
+                display: flex;
+                color: $buttonTextColor;
+                background: $buttonColor;
+                border-radius: 10px;
+                filter: drop-shadow(0px 4px 7px rgba(0, 82, 180, 24%));
+                align-items: center;
+                font-size: $footerSizeText;
+                line-height: $buttonLineHeightText;
+                gap: 10px;
+                transition: background-color 1s;
+                box-sizing: border-box;
+                justify-content: center;
+            }
+            &__button:hover {
+                background-color: #bdc0c3;
+            }
+            &__text:hover {
+                color: $selectedTextColor;
+            }
         }
     }
     &__main {
@@ -101,51 +126,42 @@ $footerOfferHeightText: 16.39px;
             gap: 40px;
             margin-top: 125px;
             margin-left: 13%;
-        }
-        &__Clipboard {
-            display: flex;
-            height: 36px;
-            width: 36px;
-            background-color: #b5d7ff;
-            border-radius: 17px;
-            justify-content: center;
-            align-items: center;
-        }
-        &__topBlok {
-            display: grid;
-            gap: 14px;
-        }
-        &__topBlokTitle {
-            height: 116px;
-            color: $mainTextColor;
-            line-height: $titleLineHeightText;
-            font-weight: $titleSizeText;
-            font-size: $titleWeightText;
-        }
-        &__topBlokText {
-            width: 468px;
-            height: 84px;
-            color: $additionalTextColor;
-            line-height: $headerLineHeightText;
-            font-weight: $additionalSizeText;
-            font-size: $mainWeightText;
-        }
-        &__topButton {
-            height: 54px;
-            width: 230px;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            border-radius: 10px;
-            filter: drop-shadow(0px 4px 7px rgba(0, 82, 180, 24%));
-            background-color: $buttonColor;
-            color: $headerBackgroundColor;
-            justify-content: center;
-            line-height: $buttonLineHeightText;
-            transition: background-color 1s;
-        }
-        &__topButton:hover {
-            background-color: #bdc0c3;
+            &__topBlok {
+                display: grid;
+                gap: 14px;
+                &__topBlokTitle {
+                    height: 116px;
+                    color: $mainTextColor;
+                    line-height: $titleLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $titleSizeText;
+                }
+                &__topBlokText {
+                    width: 468px;
+                    height: 84px;
+                    color: $additionalTextColor;
+                    line-height: $headerLineHeightText;
+                    font-weight: $additionalWeightText;
+                    font-size: $mainSizeText;
+                }
+                &__topButton {
+                    height: 54px;
+                    width: 230px;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    border-radius: 10px;
+                    filter: drop-shadow(0px 4px 7px rgba(0, 82, 180, 24%));
+                    background-color: $buttonColor;
+                    color: $headerBackgroundColor;
+                    justify-content: center;
+                    line-height: $buttonLineHeightText;
+                    transition: background-color 1s;
+                }
+                &__topButton:hover {
+                    background-color: #bdc0c3;
+                }
+            }
         }
         &__bg {
             width: 100%;
@@ -158,50 +174,59 @@ $footerOfferHeightText: 16.39px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 115px;
-        }
-        &__infoTitle {
-            display: grid;
-            gap: 16px;
-            width: 701px;
-            margin: auto;
-            text-align: center;
-        }
-        &__title {
-            line-height: $titleLineHeightText;
-            font-weight: $titleSizeText;
-            font-size: $titleWeightText;
-            letter-spacing: -2px;
-        }
-        &__infoText {
-            line-height: $headingWeightText;
-            font-weight: $titleSizeText;
-            font-size: $buttonLineHeightText;
-            color: $rareTextColor;
-            width: 600px;
-            margin: auto;
-        }
-        &__infoBlock {
-            display: flex;
-            gap: 16px;
-        }
-        &__infoDiv {
-            display: grid;
-            gap: 16px;
-            background-color: $headerBackgroundColor;
-            justify-items: center;
-            text-align: center;
-            filter: drop-shadow(0px 4px 7px rgba(201, 201, 201, 25%));
-            padding: 30px 24px;
-        }
-        &__infoBlockTitle {
-            line-height: $headingLineHeightText;
-            font-weight: $titleSizeText;
-            font-size: $headingWeightText;
-        }
-        &__infoBlockText {
-            line-height: $explanatoryLineHeightText;
-            font-weight: $additionalSizeText;
-            color: $additionalTextColor;
+            &__infoTitle {
+                display: grid;
+                gap: 16px;
+                width: 701px;
+                margin: auto;
+                text-align: center;
+                &__title {
+                    line-height: $titleLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $titleSizeText;
+                    letter-spacing: -2px;
+                }
+                &__infoText {
+                    line-height: $buttonLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $headingSizeText;
+                    color: $rareTextColor;
+                    width: 600px;
+                    margin: auto;
+                }
+            }
+            &__infoBlock {
+                display: flex;
+                gap: 16px;
+                &__infoDiv {
+                    display: grid;
+                    gap: 16px;
+                    background-color: $headerBackgroundColor;
+                    justify-items: center;
+                    text-align: center;
+                    filter: drop-shadow(0px 4px 7px rgba(201, 201, 201, 25%));
+                    padding: 30px 24px;
+                    &__Clipboard {
+                        display: flex;
+                        height: 36px;
+                        width: 36px;
+                        background-color: #b5d7ff;
+                        border-radius: 17px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &__infoBlockTitle {
+                        line-height: $headingLineHeightText;
+                        font-weight: $titleWeightText;
+                        font-size: $headingSizeText;
+                    }
+                    &__infoBlockText {
+                        line-height: $explanatoryLineHeightText;
+                        font-weight: $additionalWeightText;
+                        color: $additionalTextColor;
+                    }
+                }
+            }
         }
         &__city {
             margin-top: -20px;
@@ -212,134 +237,122 @@ $footerOfferHeightText: 16.39px;
             background-color: $mainBackgroundColor;
             position: relative;
             margin-top: -35px;
-        }
-        &__submissionOfBocuments {
-            display: grid;
-            width: 556px;
-            gap: 68px;
-            margin-left: 15%;
-            margin-top: 25px;
-        }
-        &__submissionOfBocumentsStages {
-            display: grid;
-            gap: 16px;
-        }
-        &__submissionOfBocumentsStage {
-            display: flex;
-            gap: 11px;
-        }
-        &__stageDiv {
-            display: grid;
-            gap: 8px;
-        }
-        &__stageNumber {
-            display: flex;
-            background-color: $numberBackgroundColor;
-            padding: 8px 15px;
-            height: 22px;
-            justify-content: center;
-            border-radius: 17px;
-        }
-        &__stageTitle {
-            font-size: $headingWeightText;
-            line-height: $headingLineHeightText;
-            font-weight: $titleSizeText;
-        }
-        &__stageText {
-            font-size: $mainWeightText;
-            line-height: $explanatoryLineHeightText;
-            font-weight: $additionalSizeText;
-            color: $additionalTextColor;
-        }
-        &__iPhone {
-            margin-left: 65%;
-            margin-top: 75px;
-            pointer-events: none;
-        }
-        &__faq {
-            margin-top: 200px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 1024px;
-            display: grid;
-            gap: 50px;
-        }
-        &__faqDetails {
-            display: grid;
-            gap: 16px;
-        }
-        details {
-            background-color: $headerBackgroundColor;
-            border-radius: 12px;
-            padding: 24px;
-            font-size: $mainWeightText;
-            line-height: $explanatoryLineHeightText;
-            font-weight: $additionalSizeText;
-            color: $additionalTextColor;
-            font-family: $additionalFontFamily;
-        }
-        details > div {
-            padding-top: 18px;
-        }
-        summary {
-            font-size: $headingWeightText;
-            line-height: $explanatoryLineHeightText;
-            font-weight: $titleSizeText;
-            color: $mainTextColor;
-            font-family: $mainFontFamily;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .chevron {
-            height: 28px;
-            width: 28px;
-        }
-        &__questions {
-            display: grid;
-            gap: 40px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 200px;
-            width: 420px;
-            justify-content: center;
-            padding-bottom: 200px;
-        }
-        &__questionsMain {
-            display: grid;
-            gap: 20px;
-            width: 305px;
-            justify-content: center;
-            margin: auto;
-        }
-        &__questionsText {
-            margin: auto;
-            font-size: $headingWeightText;
-            line-height: $headingLineHeightText;
-            font-weight: $titleSizeText;
-            color: $additionalTextColor;
-            letter-spacing: -1px;
-        }
-        &__questionsButton {
-            align-items: center;
-            display: flex;
-            gap: 21px;
-            border-radius: 12px;
-            padding: 18px 68px;
-            color: #fff;
-            background: linear-gradient(#37bbfe, #007dbb);
-        }
-        &__questionsButtonText {
-            font-size: $mainWeightText;
-            line-height: $headerLineHeightText;
-            color: $headerBackgroundColor;
+            &__submissionOfBocuments {
+                display: grid;
+                width: 556px;
+                gap: 68px;
+                margin-left: 15%;
+                margin-top: 25px;
+                &__title {
+                    line-height: $titleLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $titleSizeText;
+                }
+                &__submissionOfBocumentsStages {
+                    display: grid;
+                    gap: 16px;
+                    &__submissionOfBocumentsStage {
+                        display: flex;
+                        gap: 11px;
+                        &__stageNumber {
+                            display: flex;
+                            background-color: $numberBackgroundColor;
+                            padding: 8px 15px;
+                            height: 22px;
+                            justify-content: center;
+                            border-radius: 17px;
+                        }
+                        &__stageDiv {
+                            display: grid;
+                            gap: 8px;
+                            &__stageTitle {
+                                line-height: $headingLineHeightText;
+                                font-weight: $titleWeightText;
+                                font-size: $headingSizeText;
+                            }
+                            &__stageText {
+                                line-height: $explanatoryLineHeightText;
+                                font-weight: $additionalWeightText;
+                                font-size: $mainSizeText;
+                                color: $additionalTextColor;
+                            }
+                        }
+                    }
+                }
+            }
+            &__iPhone {
+                margin-left: 65%;
+                margin-top: 75px;
+                pointer-events: none;
+            }
+            &__faq {
+                margin-top: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 1024px;
+                display: grid;
+                gap: 50px;
+                &__title {
+                    line-height: $titleLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $titleSizeText;
+                }
+                &__faqDetails {
+                    display: grid;
+                    gap: 16px;
+                }
+            }
+            &__questions {
+                display: grid;
+                gap: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+                width: 420px;
+                justify-content: center;
+                padding-bottom: 200px;
+                &__title {
+                    line-height: $titleLineHeightText;
+                    font-weight: $titleWeightText;
+                    font-size: $titleSizeText;
+                }
+                &__questionsMain {
+                    display: grid;
+                    gap: 20px;
+                    width: 305px;
+                    justify-content: center;
+                    margin: auto;
+                    &__questionsText {
+                        margin: auto;
+                        line-height: $headingLineHeightText;
+                        font-weight: $titleWeightText;
+                        font-size: $headingSizeText;
+                        color: $additionalTextColor;
+                        letter-spacing: -1px;
+                    }
+                    &__questionsButton {
+                        align-items: center;
+                        display: flex;
+                        gap: 21px;
+                        border-radius: 12px;
+                        padding: 18px 68px;
+                        color: #fff;
+                        background: linear-gradient(#37bbfe, #007dbb);
+                        &__questionsButtonText {
+                            line-height: $headerLineHeightText;
+                            font-size: $mainSizeText;
+                            color: $headerBackgroundColor;
+                        }
+                    }
+                }
+            }
         }
     }
     &__footer {
         background-color: $footerBackgroundColor;
         height: 100px;
-        font-size: $footerWeightText;
         line-height: $footerLineHeightText;
+        font-size: $footerSizeText;
         color: $additionalTextColor;
         display: grid;
         &__divText1 {
@@ -348,20 +361,25 @@ $footerOfferHeightText: 16.39px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        &__telegram {
-            color: $headerBackgroundColor;
-            display: flex;
-            gap: 8px;
-            align-items: center;
+            &__telegram {
+                color: $headerBackgroundColor;
+                display: flex;
+                gap: 8px;
+            }
+            &__telegram:hover {
+                color: $selectedTextColor;
+            }
         }
         &__divText2 {
             margin: auto;
             display: flex;
             justify-content: space-between;
-            font-size: $footerOfferWeightText;
-            font-weight: $mainWeightText;
             line-height: $footerOfferHeightText;
+            font-weight: $mainWeightText;
+            font-size: $footerOfferSizeText;
+        }
+        &__selectedText:hover {
+            color: $selectedTextColor;
         }
     }
 }
