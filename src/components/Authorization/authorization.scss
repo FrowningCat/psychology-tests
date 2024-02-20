@@ -5,101 +5,103 @@ $buttonColor: #0052b4;
 $headerBackgroundColor: #fff;
 $mainBackgroundColor: #dfe8eb;
 
-$mainSizeText: 600;
-$additionalSizeText: 400;
-$titleSizeText: 700;
+$mainWeightText: 600;
+$additionalWeightText: 400;
+$titleWeightText: 700;
 
-$mainWeightText: 16px;
-$titleWeightText: 44px;
-$headingWeightText: 24px;
-$explanatoryWeightText: 18px;
+$mainSizeText: 16px;
+$titleSizeText: 44px;
+$headingSizeText: 24px;
+$explanatorySizeText: 18px;
 
 $headerLineHeightText: 22px;
 $titleLineHeightText: 53px;
 $explanatoryLineHeightText: 25px;
 
-.header {
-    height: 60px;
-    display: flex;
-    background-color: $headerBackgroundColor;
-    filter: drop-shadow(0px 4px 4px rgba(219, 219, 219, 25%));
+input::placeholder {
+    color: $selectedTextColor;
 }
 
 .authorization {
-    display: flex;
-    &__div {
-        display: grid;
-        height: 459px;
-        width: 369px;
-        gap: 30px;
-        margin-top: 251px;
-        margin-left: 106px;
+    &__header {
+        height: 60px;
+        display: flex;
+        background-color: $headerBackgroundColor;
+        filter: drop-shadow(0px 4px 4px rgba(219, 219, 219, 25%));
     }
-    &__text {
-        display: grid;
-        height: 135px;
-        gap: 20px;
-    }
-    &__textTitle {
-        line-height: $titleLineHeightText;
-        font-size: $titleWeightText;
-        font-weight: $mainSizeText;
-    }
-    &__textLink {
-        line-height: $explanatoryLineHeightText;
-        font-size: $explanatoryWeightText;
-        font-weight: $additionalSizeText;
-        color: $additionalTextColor;
-    }
-    &__textHref {
-        font-weight: $titleSizeText;
-        color: $selectedTextColor;
-    }
-    &__input {
-        display: grid;
-        height: 294px;
-        gap: 40px;
-    }
-    &__inputText {
-        color: $buttonColor;
-        border: 1px solid $mainBackgroundColor;
-        border-radius: 10px;
-        font-size: $mainWeightText;
-        line-height: $headerLineHeightText;
-        font-weight: $additionalSizeText;
-        padding-left: 24px;
-    }
-    .bg_site {
-        height: 1024px;
-        width: 757px;
-    }
-    .input_img {
-        position: relative;
-    }
-    .eye {
-        margin-top: 123px;
-        margin-left: 328px;
-        position: absolute;
-    }
-    input::placeholder {
-        color: $buttonColor;
-    }
-    &__button {
-        background-color: $buttonColor;
-        color: $buttonTextColor;
-        filter: drop-shadow(0px 0px 7px rgba(0, 82, 180, 24%));
-        border: none;
-        border-radius: 10px;
-        padding: 16px 34px;
-        height: 58px;
-        width: 369px;
-        font-size: $headingWeightText;
-        line-height: $explanatoryLineHeightText;
-        font-weight: $mainSizeText;
-        transition: background-color 1s;
-    }
-    &__button:hover {
-        cursor: pointer;
-        background-color: $mainBackgroundColor;
+    &__main {
+        display: flex;
+        &__bgSite {
+            height: 1024px;
+            width: 757px;
+        }
+        &__div {
+            display: grid;
+            height: 459px;
+            width: 369px;
+            gap: 30px;
+            margin-top: 251px;
+            margin-left: 106px;
+            &__text {
+                display: grid;
+                height: 135px;
+                gap: 20px;
+                &__textTitle {
+                    line-height: $titleLineHeightText;
+                    font-size: $titleSizeText;
+                    font-weight: $mainWeightText;
+                }
+                &__textLink {
+                    line-height: $explanatoryLineHeightText;
+                    font-size: $explanatorySizeText;
+                    font-weight: $additionalWeightText;
+                    color: $additionalTextColor;
+                    &__textHref {
+                        font-weight: $titleWeightText;
+                        color: $selectedTextColor;
+                    }
+                }
+            }
+            &__input {
+                display: grid;
+                height: 294px;
+                gap: 40px;
+                &__inputText {
+                    display: flex;
+                    color: $buttonColor;
+                    border: 1px solid $mainBackgroundColor;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0 12px;
+                    border-radius: 10px;
+                    font-size: $mainSizeText;
+                    line-height: $headerLineHeightText;
+                    font-weight: $additionalWeightText;
+                    &__eye {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                &__button {
+                    background-color: $buttonColor;
+                    color: $buttonTextColor;
+                    filter: drop-shadow(0px 0px 7px rgba(0, 82, 180, 24%));
+                    border: none;
+                    border-radius: 10px;
+                    padding: 16px 34px;
+                    height: 58px;
+                    width: 369px;
+                    font-size: $headingSizeText;
+                    line-height: $explanatoryLineHeightText;
+                    font-weight: $mainWeightText;
+                    transition: background-color 1s;
+                }
+                &__button:hover {
+                    cursor: pointer;
+                    background-color: $mainBackgroundColor;
+                }
+            }
+        }
     }
 }
