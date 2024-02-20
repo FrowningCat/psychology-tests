@@ -1,1 +1,88 @@
-/*# sourceMappingURL=authorization.css.map */
+.header {
+  height: 60px;
+  display: flex;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(219, 219, 219, 0.25));
+}
+
+.authorization {
+  display: flex;
+}
+.authorization__div {
+  display: grid;
+  height: 459px;
+  width: 369px;
+  gap: 30px;
+  margin-top: 251px;
+  margin-left: 106px;
+}
+.authorization__text {
+  display: grid;
+  height: 135px;
+  gap: 20px;
+}
+.authorization__textTitle {
+  line-height: 53px;
+  font-size: 44px;
+  font-weight: 600;
+}
+.authorization__textLink {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+.authorization__textHref {
+  font-weight: 700;
+  color: #0052b4;
+}
+.authorization__input {
+  display: grid;
+  height: 294px;
+  gap: 40px;
+}
+.authorization__inputText {
+  color: #0052b4;
+  border: 1px solid #dfe8eb;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-left: 24px;
+}
+.authorization .bg_site {
+  height: 1024px;
+  width: 757px;
+}
+.authorization .input_img {
+  position: relative;
+}
+.authorization .eye {
+  margin-top: 123px;
+  margin-left: 328px;
+  position: absolute;
+}
+.authorization input::-moz-placeholder {
+  color: #0052b4;
+}
+.authorization input::placeholder {
+  color: #0052b4;
+}
+.authorization__button {
+  background-color: #0052b4;
+  color: #fff;
+  filter: drop-shadow(0px 0px 7px rgba(0, 82, 180, 0.24));
+  border: none;
+  border-radius: 10px;
+  padding: 16px 34px;
+  height: 58px;
+  width: 369px;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 600;
+  transition: background-color 1s;
+}
+.authorization__button:hover {
+  cursor: pointer;
+  background-color: #dfe8eb;
+}/*# sourceMappingURL=authorization.css.map */
