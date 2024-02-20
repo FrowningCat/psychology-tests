@@ -96,8 +96,8 @@ export default function lending() {
                         </div>
                     </Link>
                     <Link to={'/personalAccount'} className="link_btn">
-                        <div className="landing__header__block__button">
-                            <text className="link">Тесты</text>
+                        <div className="landing__header__block__button link">
+                            <text className="link">Личный кабинет</text>
                         </div>
                     </Link>
                 </div>
@@ -120,10 +120,14 @@ export default function lending() {
                             </text>
                         </div>
                     </div>
-                    <Link to={'/authorization'} className="link_btn">
+                    <Link to={'/authorization'} className="link">
                         <div className="landing__main__topDiv__topBlok__topButton link">
-                            <text>Lorem, ipsum.</text>
-                            <img src={arrow} alt="arrow png"></img>
+                            <text className="link">Lorem, ipsum.</text>
+                            <img
+                                src={arrow}
+                                alt="arrow png"
+                                className="link"
+                            ></img>
                         </div>
                     </Link>
                 </div>
