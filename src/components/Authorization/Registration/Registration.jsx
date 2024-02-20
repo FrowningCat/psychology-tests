@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 import '../../Authorization/authorization.css';
+import './registration.css';
 
 import eye from '../../../assets/Authorization/eye.png';
 import bg_site from '../../../assets/Authorization/bg_site.png';
@@ -60,7 +61,7 @@ export default function Registration() {
                         className="authorization__main__bgSite"
                     />
                 </div>
-                <div className="authorization__main__div">
+                <div className="authorization__main__div divReg">
                     <div className="authorization__main__div__text">
                         <div className="authorization__main__div__text__textTitle">
                             Регистрация
@@ -76,7 +77,7 @@ export default function Registration() {
                             </Link>
                         </div>
                     </div>
-                    <div className="authorization__main__div__input">
+                    <div className="authorization__main__div__input inputReg">
                         <div
                             className="authorization__main__div__input__inputText"
                             onMouseLeave={() => email()}
@@ -96,7 +97,7 @@ export default function Registration() {
                                 id="name"
                                 type="name"
                                 className="authorization__main__div__input__inputText__width"
-                                placeholder="Пароль"
+                                placeholder="Имя"
                             ></input>
                         </div>
                         <div
@@ -107,7 +108,7 @@ export default function Registration() {
                                 id="surname"
                                 type="name"
                                 className="authorization__main__div__input__inputText__width"
-                                placeholder="Пароль"
+                                placeholder="Фамилия"
                             ></input>
                         </div>
                         <div
@@ -118,7 +119,7 @@ export default function Registration() {
                                 id="thone"
                                 type="namber"
                                 className="authorization__main__div__input__inputText__width"
-                                placeholder="Пароль"
+                                placeholder="Номер телефона"
                             ></input>
                         </div>
                         <div
@@ -129,7 +130,7 @@ export default function Registration() {
                                 type="password"
                                 id="pass1"
                                 className="authorization__main__div__input__inputText__width"
-                                placeholder="Пароль"
+                                placeholder="Придумайте пароль"
                             ></input>
                             <img
                                 onClick={() => eyeClick1()}
@@ -146,7 +147,7 @@ export default function Registration() {
                                 type="password"
                                 id="pass2"
                                 className="authorization__main__div__input__inputText__width"
-                                placeholder="Пароль"
+                                placeholder="Повторите пароль"
                             ></input>
                             <img
                                 onClick={() => eyeClick2()}

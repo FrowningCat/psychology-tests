@@ -64,7 +64,8 @@ input::placeholder {
             }
             &__input {
                 display: grid;
-                height: 294px;
+                min-height: 294px;
+                min-height: 700px;
                 gap: 40px;
                 &__inputText {
                     display: flex;
