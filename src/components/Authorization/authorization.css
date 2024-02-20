@@ -65,6 +65,9 @@ input::placeholder {
   line-height: 22px;
   font-weight: 400;
 }
+.authorization__main__div__input__inputText__width {
+  width: 300px;
+}
 .authorization__main__div__input__inputText__eye {
   height: 20px;
   width: 20px;

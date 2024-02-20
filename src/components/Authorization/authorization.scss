@@ -78,6 +78,9 @@ input::placeholder {
                     font-size: $mainSizeText;
                     line-height: $headerLineHeightText;
                     font-weight: $additionalWeightText;
+                    &__width {
+                        width: 300px;
+                    }
                     &__eye {
                         height: 20px;
                         width: 20px;
