@@ -97,7 +97,7 @@ export default function lending() {
                     </Link>
                     <Link to={'/personalAccount'} className="link_btn">
                         <div className="landing__header__block__button link">
-                            <text className="link">Личный кабинет</text>
+                            <text className="link">Тесты</text>
                         </div>
                     </Link>
                 </div>

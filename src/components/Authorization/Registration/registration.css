@@ -6,4 +6,55 @@
   display: grid;
   min-height: 700px;
   gap: 40px;
+}
+
+.buttonReg {
+  margin-top: -70px;
+}
+
+.authorization__main__div__input__inputText__errorText {
+  margin-top: -25px;
+  color: red;
+}
+.authorization__main__div__input__inputText__errorText__emailNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__nameNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__surnameNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__telephoneNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__passwordNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__repPasswordNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__repTwoPassNone {
+  display: none;
+}
+.authorization__main__div__input__inputText__errorText__emailBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__nameBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__surnameBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__telephoneBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__passwordBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__repPasswordBlock {
+  display: block;
+}
+.authorization__main__div__input__inputText__errorText__repTwoPassBlock {
+  display: block;
 }/*# sourceMappingURL=registration.css.map */

@@ -49,8 +49,7 @@ input::placeholder {
 }
 .authorization__main__div__input {
   display: grid;
-  min-height: 294px;
-  min-height: 700px;
+  height: 294px;
   gap: 40px;
 }
 .authorization__main__div__input__inputText {

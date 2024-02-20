@@ -8,13 +8,94 @@ import eye from '../../../assets/Authorization/eye.png';
 import bg_site from '../../../assets/Authorization/bg_site.png';
 
 export default function Registration() {
-    const [link, setLink] = useState('/authorization');
-    const [passChek, setPassChek] = useState('false');
-    const [loginChek, setLoginChek] = useState('false');
     const regEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$/;
     const regPhone = /\++[0-9]/;
-    function eyeClick() {
-        let password = document.getElementById('pass');
+    const regName = /[a-z]/;
+
+    const [errorEmail, setErrorEmail] = useState(
+        'authorization__main__div__input__inputText__errorText__emailNone'
+    );
+    const [errorName, setErrorName] = useState(
+        'authorization__main__div__input__inputText__errorText__nameNone'
+    );
+    const [errorSurname, setErrorSurname] = useState(
+        'authorization__main__div__input__inputText__errorText__surnameNone'
+    );
+    const [errorTelephone, setErrorTelephone] = useState(
+        'authorization__main__div__input__inputText__errorText__telephoneNone'
+    );
+    const [errorPassword, setErrorPassword] = useState(
+        'authorization__main__div__input__inputText__errorText__passwordNone'
+    );
+    const [errorPasswordRep, setErrorPasswordRep] = useState(
+        'authorization__main__div__input__inputText__errorText__repPasswordNone'
+    );
+    const [errorTwoPasswordRep, setErrorTwoPasswordRep] = useState(
+        'authorization__main__div__input__inputText__errorText__repTwoPassNone'
+    );
+
+    function linkK() {
+        let email = document.getElementById('email').value;
+        let name = document.getElementById('name').value;
+        let surname = document.getElementById('surname').value;
+        let telephone = document.getElementById('telephone').value;
+        let password = document.getElementById('password').value;
+        let passwordRep = document.getElementById('passwordRep').value;
+        if (regEmail.test(email) === false) {
+            setErrorEmail(
+                'authorization__main__div__input__inputText__errorText__emailBlock'
+            );
+        } else if (regName.test(name) === false) {
+            setErrorEmail(
+                'authorization__main__div__input__inputText__errorText__emailNone'
+            );
+            setErrorName(
+                'authorization__main__div__input__inputText__errorText__nameBlock'
+            );
+        } else if (regName.test(surname) === false) {
+            setErrorName(
+                'authorization__main__div__input__inputText__errorText__nameNone'
+            );
+            setErrorSurname(
+                'authorization__main__div__input__inputText__errorText__surnameBlock'
+            );
+        } else if (regPhone.test(telephone) === false) {
+            setErrorSurname(
+                'authorization__main__div__input__inputText__errorText__surnameNone'
+            );
+            setErrorTelephone(
+                'authorization__main__div__input__inputText__errorText__telephoneBlock'
+            );
+        } else if (password == '') {
+            setErrorTelephone(
+                'authorization__main__div__input__inputText__errorText__telephoneNone'
+            );
+            setErrorPassword(
+                'authorization__main__div__input__inputText__errorText__passwordBlock'
+            );
+        } else if (passwordRep == '') {
+            setErrorPassword(
+                'authorization__main__div__input__inputText__errorText__passwordNone'
+            );
+            setErrorPasswordRep(
+                'authorization__main__div__input__inputText__errorText__repPasswordBlock'
+            );
+        } else if (passwordRep !== password) {
+            setErrorPasswordRep(
+                'authorization__main__div__input__inputText__errorText__repPasswordNone'
+            );
+            setErrorTwoPasswordRep(
+                'authorization__main__div__input__inputText__errorText__repTwoPassBlock'
+            );
+        } else {
+            setErrorTwoPasswordRep(
+                'authorization__main__div__input__inputText__errorText__repTwoPassNone'
+            );
+        }
+    }
+
+    function eyeClick1() {
+        let password = document.getElementById('password');
         if (password.getAttribute('type') == 'password') {
             password.setAttribute('type', 'text');
         } else {
@@ -22,31 +103,12 @@ export default function Registration() {
         }
     }
 
-    function checkLogin() {
-        let login = document.getElementById('login').value;
-        if ((regEmail.test(login) || regPhone.test(login)) === false) {
-            alert('Введите логин');
-            setLoginChek('false');
+    function eyeClick2() {
+        let password = document.getElementById('passwordRep');
+        if (password.getAttribute('type') == 'password') {
+            password.setAttribute('type', 'text');
         } else {
-            setLoginChek('true');
-        }
-    }
-
-    function checkPass() {
-        let password = document.getElementById('pass').value;
-        if (password == '') {
-            alert('Введите пароль');
-            setPassChek('false');
-        } else {
-            setPassChek('true');
-        }
-    }
-
-    function linkK() {
-        if (passChek != false && loginChek != false) {
-            setLink('/');
-        } else {
-            setLink('/authorization');
+            password.setAttribute('type', 'password');
         }
     }
 
@@ -78,10 +140,7 @@ export default function Registration() {
                         </div>
                     </div>
                     <div className="authorization__main__div__input inputReg">
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => email()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
                                 id="email"
                                 type="email"
@@ -89,10 +148,7 @@ export default function Registration() {
                                 placeholder="Эл. почта"
                             ></input>
                         </div>
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => name()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
                                 id="name"
                                 type="name"
@@ -100,10 +156,7 @@ export default function Registration() {
                                 placeholder="Имя"
                             ></input>
                         </div>
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => surname()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
                                 id="surname"
                                 type="name"
@@ -111,24 +164,18 @@ export default function Registration() {
                                 placeholder="Фамилия"
                             ></input>
                         </div>
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => thone()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
-                                id="thone"
+                                id="telephone"
                                 type="namber"
                                 className="authorization__main__div__input__inputText__width"
                                 placeholder="Номер телефона"
                             ></input>
                         </div>
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => checkPass1()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
                                 type="password"
-                                id="pass1"
+                                id="password"
                                 className="authorization__main__div__input__inputText__width"
                                 placeholder="Придумайте пароль"
                             ></input>
@@ -139,13 +186,10 @@ export default function Registration() {
                                 className="authorization__main__div__input__inputText__eye link"
                             />
                         </div>
-                        <div
-                            className="authorization__main__div__input__inputText"
-                            onMouseLeave={() => checkPass2()}
-                        >
+                        <div className="authorization__main__div__input__inputText">
                             <input
                                 type="password"
-                                id="pass2"
+                                id="passwordRep"
                                 className="authorization__main__div__input__inputText__width"
                                 placeholder="Повторите пароль"
                             ></input>
@@ -156,11 +200,29 @@ export default function Registration() {
                                 className="authorization__main__div__input__inputText__eye link"
                             />
                         </div>
-                        <Link onClick={() => linkK()} to={link}>
-                            <button className="authorization__main__div__input__button">
-                                Войти
-                            </button>
-                        </Link>
+                        <div className="authorization__main__div__input__inputText__errorText">
+                            <div className={errorEmail}>Введите почту</div>
+                            <div className={errorName}>Введите имя</div>
+                            <div className={errorSurname}>Введите фамилию</div>
+                            <div className={errorTelephone}>
+                                Введите номер телефона
+                            </div>
+                            <div className={errorPassword}>Введите пароль</div>
+                            <div className={errorPasswordRep}>
+                                Повторите пароль
+                            </div>
+                            <div className={errorTwoPasswordRep}>
+                                Пароли не совпали
+                            </div>
+                        </div>
+                        {/* <Link onClick={() => linkK()} to={link}> */}
+                        <button
+                            onClick={() => linkK()}
+                            className="authorization__main__div__input__button buttonReg"
+                        >
+                            Войти
+                        </button>
+                        {/* </Link> */}
                     </div>
                 </div>
             </main>

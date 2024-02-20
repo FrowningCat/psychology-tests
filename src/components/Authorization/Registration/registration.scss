@@ -7,3 +7,64 @@
     min-height: 700px;
     gap: 40px;
 }
+
+.buttonReg {
+    margin-top: -70px;
+}
+
+.authorization {
+    &__main {
+        &__div {
+            &__input {
+                &__inputText {
+                    &__errorText {
+                        margin-top: -25px;
+                        color: red;
+                        &__emailNone {
+                            display: none;
+                        }
+                        &__nameNone {
+                            display: none;
+                        }
+                        &__surnameNone {
+                            display: none;
+                        }
+                        &__telephoneNone {
+                            display: none;
+                        }
+                        &__passwordNone {
+                            display: none;
+                        }
+                        &__repPasswordNone {
+                            display: none;
+                        }
+                        &__repTwoPassNone {
+                            display: none;
+                        }
+                        &__emailBlock {
+                            display: block;
+                        }
+                        &__nameBlock {
+                            display: block;
+                        }
+                        &__surnameBlock {
+                            display: block;
+                        }
+                        &__telephoneBlock {
+                            display: block;
+                        }
+                        &__passwordBlock {
+                            display: block;
+                        }
+                        &__repPasswordBlock {
+                            display: block;
+                        }
+                        &__repTwoPassBlock {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
